@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 
 import App from "@/App.vue";
-import router from "@/router";
+import router from "@/main.routes";
 import "@/main.scss";
 
 import { FontAwesomeIcon } from "@/shared/plugins/font-awesome.plugin";
