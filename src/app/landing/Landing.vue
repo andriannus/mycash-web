@@ -1,13 +1,17 @@
 <template>
   <div class="Padding-base">
-    <router-link class="Button Button--primary Button--fullWidth" to="/loan">
-      Ajukan Pinjaman
-    </router-link>
+    <my-button full-width color="primary" to="/loan">Ajukan Pinjaman</my-button>
   </div>
 </template>
 
 <script>
+import MyButton from "@/shared/components/my-button/MyButton.vue";
+
 export default {
   name: "Landing",
+
+  components: {
+    MyButton,
+  },
 };
 </script>
