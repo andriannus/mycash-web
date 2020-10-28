@@ -40,3 +40,38 @@ export const LOAN_PURPOSE_OPTIONS = [
     value: "Other",
   },
 ];
+
+export const VENTURE_CAPITAL_OPTIONS = [
+  {
+    text: "Membeli barang dagangan",
+    value: "BuyMoreInventories",
+  },
+  {
+    text: "Membayar biaya tempat usaha",
+    value: "PayShopOrOutletRent",
+  },
+  {
+    text: "Renovasi tempat usaha",
+    value: "RenovateShopOrOutlet",
+  },
+  {
+    text: "Menambah cabang usaha",
+    value: "ExpandOrAddMoreShop",
+  },
+  {
+    text: "Membayar hutang usaha",
+    value: "PayBackLoans",
+  },
+  {
+    text: "Menambah pegawai",
+    value: "RecruitMoreEmployees",
+  },
+  {
+    text: "Biaya operasional",
+    value: "OperationalCost",
+  },
+  {
+    text: "Lainnya",
+    value: "Others",
+  },
+];

@@ -17,6 +17,14 @@ const loanRoutes = [
             /* webpackChunkName: "loan-purpose" */ "./loan-purpose/LoanPurpose.vue"
           ),
       },
+      {
+        path: "venture-capital",
+        name: "LoanVentureCapital",
+        component: () =>
+          import(
+            /* webpackChunkName: "loan-venture-capital" */ "./loan-venture-capital/LoanVentureCapital.vue"
+          ),
+      },
     ],
   },
 ];
