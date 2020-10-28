@@ -14,8 +14,9 @@ export default {
 .Header {
   display: inline-flex;
   left: 0;
-  min-width: 100vw;
-  position: fixed;
+  min-width: 100%;
+  position: sticky;
   top: 0;
+  z-index: 10;
 }
 </style>

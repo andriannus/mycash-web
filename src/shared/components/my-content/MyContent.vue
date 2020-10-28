@@ -99,7 +99,6 @@ export default {
 
   &--hasToolbar {
     min-height: calc(100vh - 56px);
-    margin-top: 56px;
   }
 }
 </style>
