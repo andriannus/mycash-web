@@ -5,7 +5,7 @@
       class="Radio-control"
       :name="name"
       type="radio"
-      :value="value"
+      :value="modelValue"
       @change="onChange"
     />
 
@@ -30,6 +30,10 @@ export default {
       type: String,
       default: "",
     },
+    modelValue: {
+      type: [String, Boolean],
+      default: null,
+    },
     name: {
       type: String,
       default: "Rb",
@@ -42,7 +46,8 @@ export default {
 
   setup(props, { emit }) {
     const hasClassName = computed(() => !!props.className);
-    const onChange = $event => emit("input", $event.target.value);
+
+    const onChange = () => emit("update:modelValue", props.value);
 
     return { hasClassName, onChange };
   },
