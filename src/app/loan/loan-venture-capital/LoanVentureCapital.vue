@@ -15,7 +15,7 @@
       ></my-radio-group>
 
       <template #contentFooter>
-        <my-button color="primary" full-width>
+        <my-button color="primary" full-width to="/loan/confirm-area">
           Lanjutkan
         </my-button>
       </template>

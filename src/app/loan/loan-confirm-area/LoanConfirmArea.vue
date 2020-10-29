@@ -17,11 +17,11 @@
       </p>
 
       <my-radio
-        v-model="isInsideServiceArea"
+        v-model="serviceArea"
         id="RbInsideServiceArea"
         className="MarginBottom-base"
         name="RbServiceArea"
-        :value="true"
+        value="inside"
       >
         <p>
           <strong>Jawa:</strong>
@@ -46,16 +46,21 @@
       </my-radio>
 
       <my-radio
-        v-model="isInsideServiceArea"
+        v-model="serviceArea"
         id="RbOutsideServiceArea"
         name="RbServiceArea"
-        :value="true"
+        value="outside"
       >
         Di kota lainnya.
       </my-radio>
 
       <template #contentFooter>
-        <my-button color="primary" full-width>
+        <my-button
+          color="primary"
+          :disabled="hasNotBeenSelected"
+          full-width
+          @click="onClickNextButton"
+        >
           Lanjutkan
         </my-button>
       </template>
@@ -64,7 +69,8 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useRouter } from "vue-router";
 
 import ServiceAreaIcon from "../shared/images/service-area.svg";
 
@@ -93,9 +99,22 @@ export default {
   },
 
   setup() {
-    const isInsideServiceArea = ref(null);
+    const router = useRouter();
 
-    return { isInsideServiceArea };
+    const serviceArea = ref(null);
+    const hasNotBeenSelected = computed(() => serviceArea.value === null);
+
+    const onClickNextButton = () => {
+      if (serviceArea.value === "outside") {
+        return router.push("/loan/outside-area");
+      }
+    };
+
+    return {
+      hasNotBeenSelected,
+      serviceArea,
+      onClickNextButton,
+    };
   },
 };
 </script>
