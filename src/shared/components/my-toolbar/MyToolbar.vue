@@ -33,11 +33,11 @@ export default {
   padding: 14px 16px;
   width: 100%;
 
-  *:not(:last-child) {
+  :not(:last-child) {
     margin-right: 16px;
   }
 
-  *:nth-child(2) {
+  :nth-child(2) {
     flex-grow: 1;
     text-align: left;
   }

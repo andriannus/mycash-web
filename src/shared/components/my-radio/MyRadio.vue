@@ -1,8 +1,9 @@
 <template>
-  <div class="Radio">
+  <div :class="[hasClassName ? className : '']" class="Radio">
     <input
       :id="id"
       class="Radio-control"
+      :name="name"
       type="radio"
       :value="value"
       @change="onChange"
@@ -15,24 +16,35 @@
 </template>
 
 <script>
+import { computed } from "vue";
+
 export default {
   name: "MyRadio",
 
   props: {
+    className: {
+      type: String,
+      default: "",
+    },
     id: {
       type: String,
       default: "",
     },
-    value: {
+    name: {
       type: String,
-      default: "",
+      default: "Rb",
+    },
+    value: {
+      type: [String, Boolean],
+      default: null,
     },
   },
 
-  setup(_, { emit }) {
+  setup(props, { emit }) {
+    const hasClassName = computed(() => !!props.className);
     const onChange = $event => emit("input", $event.target.value);
 
-    return { onChange };
+    return { hasClassName, onChange };
   },
 };
 </script>
