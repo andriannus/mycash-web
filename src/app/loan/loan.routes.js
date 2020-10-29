@@ -25,6 +25,14 @@ const loanRoutes = [
             /* webpackChunkName: "loan-venture-capital" */ "./loan-venture-capital/LoanVentureCapital.vue"
           ),
       },
+      {
+        path: "confirm-area",
+        name: "LoanConfirmArea",
+        component: () =>
+          import(
+            /* webpackChunkName: "loan-confirm-area" */ "./loan-confirm-area/LoanConfirmArea.vue"
+          ),
+      },
     ],
   },
 ];
