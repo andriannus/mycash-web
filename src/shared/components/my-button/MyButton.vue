@@ -6,6 +6,7 @@
   <button
     v-else
     :class="buttonClassNames"
+    :disabled="disabled"
     :type="type"
     @click="emit('onClick')"
   >
@@ -20,21 +21,30 @@ export default {
   name: "MyButton",
 
   props: {
+    className: {
+      type: String,
+      default: "",
+    },
     color: {
       type: String,
       default: "",
     },
-
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
     fullWidth: {
       type: Boolean,
       default: false,
     },
-
+    outlined: {
+      type: Boolean,
+      default: false,
+    },
     to: {
       type: String,
       default: "",
     },
-
     type: {
       type: String,
       default: "button",
@@ -52,6 +62,10 @@ export default {
       {
         "Button--fullWidth": props.fullWidth,
       },
+      {
+        "Button--outlined": props.outlined,
+      },
+      ...(props.className && props.className),
       `Button`,
     ];
 
