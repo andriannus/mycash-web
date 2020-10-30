@@ -1,1 +1,7 @@
-@import "@amar-ui-web/core/index.scss";
+@import "@amar-ui-web/core";
+
+.TextAlign {
+  &-center {
+    text-align: center;
+  }
+}
