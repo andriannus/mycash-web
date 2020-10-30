@@ -27,7 +27,7 @@ export default {
   props: {
     id: {
       type: String,
-      default: "",
+      default: "RbGroup",
     },
     options: {
       type: Array,
@@ -35,14 +35,14 @@ export default {
         return [];
       },
     },
-    value: {
+    modelValue: {
       type: String,
-      default: "",
+      default: null,
     },
   },
 
   setup(_, { emit }) {
-    const onChange = $event => emit("input", $event.target.value);
+    const onChange = $event => emit("update:modelValue", $event.target.value);
 
     return { onChange };
   },

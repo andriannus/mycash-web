@@ -1,3 +1,5 @@
+import { LoanFeature } from "./loan.enum";
+
 export const LOAN_PURPOSE_OPTIONS = [
   {
     text: "Liburan",
@@ -73,5 +75,31 @@ export const VENTURE_CAPITAL_OPTIONS = [
   {
     text: "Lainnya",
     value: "Others",
+  },
+];
+
+export const LOAN_PAGE_PATH = {
+  [LoanFeature.ConfirmArea]: "/loan/confirm-area",
+  [LoanFeature.OutsideArea]: "/loan/outside-area",
+  [LoanFeature.Purpose]: "/loan/loan-purpose",
+  [LoanFeature.VentureCapital]: "/loan/venture-capital",
+};
+
+export const LOAN_PAGES = [
+  {
+    documentTitle: "Konfirmasi Area Layanan",
+    path: LOAN_PAGE_PATH[LoanFeature.ConfirmArea],
+  },
+  {
+    documentTitle: "Diluar Area Layanan",
+    path: LOAN_PAGE_PATH[LoanFeature.OutsideArea],
+  },
+  {
+    documentTitle: "Tujuan Pinjaman",
+    path: LOAN_PAGE_PATH[LoanFeature.Purpose],
+  },
+  {
+    documentTitle: "Penggunaan Modal Usaha",
+    path: LOAN_PAGE_PATH[LoanFeature.VentureCapital],
   },
 ];

@@ -8,8 +8,8 @@
     </my-header>
 
     <my-content>
-      <div class="ServiceAreaIcon-container MarginTop-base MarginBottom-base">
-        <ServiceAreaIcon />
+      <div class="TextAlign-center MarginTop-base MarginBottom-base">
+        <service-area-icon></service-area-icon>
       </div>
 
       <p class="MarginBottom-base">
@@ -72,6 +72,8 @@
 import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 
+import { LOAN_PAGE_PATH } from "../loan.constant";
+import { LoanFeature, ServiceArea } from "../loan.enum";
 import ServiceAreaIcon from "../shared/images/service-area.svg";
 
 import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
@@ -102,28 +104,26 @@ export default {
     const router = useRouter();
 
     const serviceArea = ref(null);
-    const hasNotBeenSelected = computed(() => serviceArea.value === null);
+    const hasNotBeenSelected = computed(() => !serviceArea.value);
 
     const onClickNextButton = () => {
-      if (serviceArea.value === "outside") {
-        return router.push("/loan/outside-area");
+      const isOutsideServiceArea = serviceArea.value === ServiceArea.Outside;
+
+      if (isOutsideServiceArea) {
+        router.push(LOAN_PAGE_PATH[LoanFeature.OutsideArea]);
       }
     };
 
     return {
       hasNotBeenSelected,
-      serviceArea,
       onClickNextButton,
+      serviceArea,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.ServiceAreaIcon-container {
-  text-align: center;
-}
-
 ::v-deep {
   .Radio-control {
     min-width: 20px;

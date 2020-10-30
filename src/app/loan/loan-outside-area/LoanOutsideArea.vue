@@ -1,8 +1,8 @@
 <template>
   <my-page>
     <my-content :has-toolbar="false">
-      <div class="ServiceAreaIcon-container MarginTop-base MarginBottom-base">
-        <ServiceAreaIcon />
+      <div class="TextAlign-center MarginTop-base MarginBottom-base">
+        <service-area-icon></service-area-icon>
       </div>
 
       <p class="MarginBottom-base">
@@ -17,7 +17,7 @@
       </p>
 
       <ol class="MarginLeft-base">
-        <li class="MarginBottom-xsmall">Beri bintang 5 di Google Play.</li>
+        <li class="MarginBottom-xsmall">Beri bintang 5 di Play Store.</li>
 
         <li>
           <p>Tulis nama daerah Anda di kolom komentar.</p>
@@ -40,7 +40,7 @@
         </my-button>
 
         <my-button color="primary" full-width>
-          Buka Google Play
+          Buka Play Store
         </my-button>
       </template>
     </my-content>
@@ -65,9 +65,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.ServiceAreaIcon-container {
-  text-align: center;
-}
-</style>

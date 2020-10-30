@@ -28,10 +28,10 @@ export default {
     },
     id: {
       type: String,
-      default: "",
+      default: "Rb",
     },
     modelValue: {
-      type: [String, Boolean],
+      type: String,
       default: null,
     },
     name: {
@@ -39,7 +39,7 @@ export default {
       default: "Rb",
     },
     value: {
-      type: [String, Boolean],
+      type: String,
       default: null,
     },
   },

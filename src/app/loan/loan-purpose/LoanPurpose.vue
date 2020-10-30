@@ -15,7 +15,12 @@
       ></my-radio-group>
 
       <template #contentFooter>
-        <my-button color="primary" full-width to="/loan/venture-capital">
+        <my-button
+          color="primary"
+          :disabled="hasNotBeenSelected"
+          full-width
+          @click="onClickNextButton"
+        >
           Lanjutkan
         </my-button>
       </template>
@@ -24,9 +29,11 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import { useRouter } from "vue-router";
 
-import { LOAN_PURPOSE_OPTIONS } from "../loan.constant";
+import { LOAN_PAGE_PATH, LOAN_PURPOSE_OPTIONS } from "../loan.constant";
+import { LoanFeature } from "../loan.enum";
 
 import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
 import MyButton from "@/shared/components/my-button/MyButton.vue";
@@ -52,10 +59,22 @@ export default {
   },
 
   setup() {
-    const loanPurpose = ref("");
+    const router = useRouter();
+
+    const loanPurpose = ref(null);
+    const hasNotBeenSelected = computed(() => !loanPurpose.value);
     const options = LOAN_PURPOSE_OPTIONS;
 
-    return { loanPurpose, options };
+    const onClickNextButton = () => {
+      router.push(LOAN_PAGE_PATH[LoanFeature.VentureCapital]);
+    };
+
+    return {
+      hasNotBeenSelected,
+      loanPurpose,
+      onClickNextButton,
+      options,
+    };
   },
 };
 </script>
