@@ -79,11 +79,15 @@ export default {
 
   &::-webkit-slider-thumb {
     appearance: none;
+    background-color: $amb-primary;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
   }
 
-  &::-webkit-slider-thumb,
   &::-moz-range-thumb {
     background-color: $amb-primary;
+    border: none;
     border-radius: 50%;
     height: 20px;
     width: 20px;
