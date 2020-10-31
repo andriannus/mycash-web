@@ -81,7 +81,7 @@ export const VENTURE_CAPITAL_OPTIONS = [
 export const LOAN_PAGE_PATH = {
   [LoanFeature.ConfirmArea]: "/loan/confirm-area",
   [LoanFeature.OutsideArea]: "/loan/outside-area",
-  [LoanFeature.Purpose]: "/loan/loan-purpose",
+  [LoanFeature.Purpose]: "/loan/purpose",
   [LoanFeature.VentureCapital]: "/loan/venture-capital",
 };
 
