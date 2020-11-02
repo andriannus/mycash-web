@@ -66,10 +66,13 @@
 </template>
 
 <script>
-import { computed, reactive } from "vue";
+import { computed, onMounted, reactive } from "vue";
+
+import { PAGE_TITLE } from "./landing.constant";
 
 import MyButton from "@/shared/components/my-button/MyButton.vue";
 import MySlider from "@/shared/components/my-slider/MySlider.vue";
+import { useSeo } from "@/shared/services/seo";
 import { ceil } from "@/shared/utils/ceil.util";
 import { rupiahCurrency } from "@/shared/utils/rupiah.util";
 
@@ -82,6 +85,8 @@ export default {
   },
 
   setup() {
+    const { setTitle } = useSeo();
+
     const state = reactive({
       loanAmount: "11",
       loanPeriod: "13",
@@ -96,6 +101,10 @@ export default {
       return rupiahCurrency(
         ceil(installmentsPerMonth) + loanInterest + adminFee,
       );
+    });
+
+    onMounted(() => {
+      setTitle(PAGE_TITLE);
     });
 
     return { installmentInRupiah, state };
