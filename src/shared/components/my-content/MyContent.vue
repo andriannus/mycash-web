@@ -1,8 +1,11 @@
 <template>
   <div
-    :class="{
-      'MyContent--hasToolbar': hasToolbar,
-    }"
+    :class="[
+      {
+        'MyContent--hasToolbar': hasToolbar,
+      },
+      hasClassName && props.className,
+    ]"
     class="MyContent Flex Flex-column JustifyContent-spaceBetween"
   >
     <div
@@ -59,16 +62,18 @@ export default {
   name: "MyContent",
 
   props: {
+    className: {
+      type: String,
+      default: "",
+    },
     fullWidth: {
       type: Boolean,
       default: false,
     },
-
     hasToolbar: {
       type: Boolean,
       default: true,
     },
-
     padding: {
       type: String,
       default: "base",
@@ -76,14 +81,17 @@ export default {
   },
 
   setup(props, { slots }) {
+    const hasClassName = computed(() => !!props.className);
     const hasContentFooter = computed(() => !!slots.contentFooter);
     const hasContentHeader = computed(() => !!slots.contentHeader);
     const hasPadding = computed(() => !!props.padding);
 
     return {
+      hasClassName,
       hasContentFooter,
       hasContentHeader,
       hasPadding,
+      props,
     };
   },
 };
