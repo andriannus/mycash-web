@@ -1,5 +1,7 @@
 <template>
-  <div class="Padding-base">
+  <my-top-bar></my-top-bar>
+
+  <div class="Container">
     <div class="MarginBottom-base">
       <h1 class="FontSize-large">Ajukan Pinjaman Online Tanpa Jaminan</h1>
 
@@ -72,6 +74,7 @@ import { PAGE_TITLE } from "./landing.constant";
 
 import MyButton from "@/shared/components/my-button/MyButton.vue";
 import MySlider from "@/shared/components/my-slider/MySlider.vue";
+import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
 import { useSeo } from "@/shared/services/seo";
 import { ceil } from "@/shared/utils/ceil.util";
 import { rupiahCurrency } from "@/shared/utils/rupiah.util";
@@ -82,6 +85,7 @@ export default {
   components: {
     MyButton,
     MySlider,
+    MyTopBar,
   },
 
   setup() {

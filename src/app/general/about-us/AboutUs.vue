@@ -1,4 +1,6 @@
 <template>
+  <my-top-bar></my-top-bar>
+
   <my-page>
     <my-content
       className="TextAlign-justify"
@@ -15,9 +17,7 @@
         <p>Aiming to bring 200 million smiles by 2025</p>
       </div>
 
-      <div
-        class="PaddingTop-large PaddingRight-base PaddingBottom-large PaddingLeft-base"
-      >
+      <div class="Container PaddingTop-large PaddingBottom-large">
         <h2 class="FontSize-large MarginBottom-base">
           Apa itu Tunaiku
         </h2>
@@ -49,7 +49,7 @@
       </div>
 
       <div
-        class="BgColor-light-20 PaddingTop-large PaddingRight-base PaddingBottom-large PaddingLeft-base"
+        class="BgColor-light-20 Container PaddingTop-large PaddingBottom-large"
       >
         <picture class="Image">
           <source
@@ -72,9 +72,7 @@
         </p>
       </div>
 
-      <div
-        class="AboutUs-why PaddingTop-large PaddingRight-base PaddingBottom-large PaddingLeft-base"
-      >
+      <div class="AboutUs-why Container PaddingTop-large PaddingBottom-large">
         <h2 class="FontSize-large TextAlign-center MarginBottom-large">
           <span>Mengapa Tunaiku Lebih Baik</span>
         </h2>
@@ -116,7 +114,7 @@
       </div>
 
       <div
-        class="BgColor-light-20 PaddingTop-large PaddingRight-base PaddingBottom-large PaddingLeft-base"
+        class="BgColor-light-20 Container PaddingTop-large PaddingBottom-large"
       >
         <div class="Flex">
           <picture class="Image">
@@ -165,7 +163,7 @@
       </div>
 
       <div
-        class="AboutUs-ourOffice PaddingTop-large PaddingRight-base PaddingBottom-large PaddingLeft-base"
+        class="AboutUs-ourOffice Container PaddingTop-large PaddingBottom-large"
       >
         <h2 class="FontSize-large TextAlign-center MarginBottom-base">
           Kantor Kami
@@ -245,6 +243,7 @@ import EasyAndFastIcon from "../shared/images/easy-and-fast.svg";
 
 import MyContent from "@/shared/components/my-content/MyContent.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
+import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
 
 export default {
   name: "AboutUs",
@@ -254,6 +253,7 @@ export default {
     GeneralFooter,
     MyContent,
     MyPage,
+    MyTopBar,
   },
 };
 </script>
