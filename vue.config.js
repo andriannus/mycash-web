@@ -18,7 +18,16 @@ module.exports = {
       .loader("vue-loader-v16")
       .end()
       .use("vue-svg-loader")
-      .loader("vue-svg-loader");
+      .loader("vue-svg-loader")
+      .options({
+        svgo: {
+          plugins: [
+            {
+              prefixIds: true,
+            },
+          ],
+        },
+      });
 
     config.plugin("html").tap(args => {
       const [arg] = args;
