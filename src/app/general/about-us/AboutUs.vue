@@ -33,7 +33,9 @@
 
         <p class="MarginBottom-base">
           Mulai beroperasi pada 2014, Tunaiku merupakan produk digital
-          <a href="http://tunaiku.com">pinjaman tanpa agunan</a>
+          <a class="Color-dark-90" href="http://tunaiku.com">
+            pinjaman tanpa agunan
+          </a>
           dari PT Bank Amar Indonesia Tbk. yang dimiliki oleh perusahaan
           multinasional bernama TOLARAM.
         </p>
@@ -135,7 +137,7 @@
               digital pertama dan satu-satunya di Indonesia, baru-baru ini
               diakui sebagai salah satu tempat terbaik untuk bekerja di
               Indonesia oleh
-              <a href="https://bestplacestoworkfor.org">
+              <a class="Color-dark-90" href="https://bestplacestoworkfor.org">
                 BestPlacesToWorkFor.org
               </a>
               .
@@ -225,17 +227,20 @@
         <p class="MarginBottom-base">Bergabunglah dengan kami!</p>
 
         <a
+          class="Button Button--primary Button--rounded Transform-uppercase"
           href="https://www.techinasia.com/companies/tunaiku"
-          class="Button Button--primary Button--rounded"
         >
           Karir Tunaiku
         </a>
       </div>
+
+      <general-footer></general-footer>
     </my-content>
   </my-page>
 </template>
 
 <script>
+import GeneralFooter from "../shared/components/general-footer/GeneralFooter.vue";
 import EasyAndFastIcon from "../shared/images/easy-and-fast.svg";
 
 import MyContent from "@/shared/components/my-content/MyContent.vue";
@@ -246,6 +251,7 @@ export default {
 
   components: {
     EasyAndFastIcon,
+    GeneralFooter,
     MyContent,
     MyPage,
   },
