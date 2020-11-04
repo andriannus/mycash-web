@@ -2,116 +2,97 @@
   <my-top-bar></my-top-bar>
 
   <div class="Container">
-    <div class="MarginBottom-base">
-      <h1 class="FontSize-large">Ajukan Pinjaman Online Tanpa Jaminan</h1>
+    <div class="Grids">
+      <div class="Grid Grid-12 Grid-sm-12 Grid-md-7 Grid-lg-8 Landing-hero">
+        <h1>Ajukan Pinjaman Online Tanpa Jaminan</h1>
 
-      <p class="FontSize-small">
-        Hanya dengan KTP, dapatkan keredit tanpa agunan hingga
-        <strong>Rp20.000.000</strong>
-      </p>
-    </div>
+        <p>
+          Hanya dengan KTP, dapatkan keredit tanpa agunan hingga
+          <strong>Rp20.000.000</strong>
+        </p>
+      </div>
 
-    <div class="Card MarginBottom-base">
-      <div class="Card-body">
-        <div class="MarginBottom-base">
-          <div class="Flex JustifyContent-between">
-            <strong>Jumlah Pinjaman</strong>
-            <strong class="Color-primary">{{ state.loanAmount }} juta</strong>
-          </div>
-
-          <my-slider v-model="state.loanAmount" :max="20" :min="2"></my-slider>
-
-          <div class="Flex JustifyContent-between">
-            <span>2 juta</span>
-            <span>20 juta</span>
-          </div>
-        </div>
-
-        <div class="MarginBottom-base">
-          <div class="Flex JustifyContent-between">
-            <strong>Lama Pinjaman</strong>
-            <strong class="Color-primary">{{ state.loanPeriod }} bulan</strong>
-          </div>
-
-          <my-slider v-model="state.loanPeriod" :max="20" :min="6"></my-slider>
-
-          <div class="Flex JustifyContent-between">
-            <span>6 bulan</span>
-            <span>20 bulan</span>
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="TextAlign-center">
-          <p>
-            <strong>Cicilan per bulan</strong>
-            <br />
-            <small class="Color-light-70">
-              *sudah termasuk bunga dan biaya admin
-            </small>
-          </p>
-
-          <p class="MarginBottom-xsmall">
-            <strong class="Color-primary FontSize-2xlarge">
-              {{ installmentInRupiah }}
-            </strong>
-          </p>
-        </div>
-
-        <my-button full-width color="primary" to="/loan">
-          Ajukan Pinjaman
-        </my-button>
+      <div class="Grid Grid-12 Grid-sm-12 Grid-md-5 Grid-lg-4">
+        <app-loan-slider :borderless="true" :elevated="true"></app-loan-slider>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { computed, onMounted, reactive } from "vue";
+import { onMounted } from "vue";
 
 import { PAGE_TITLE } from "./landing.constant";
 
-import MyButton from "@/shared/components/my-button/MyButton.vue";
-import MySlider from "@/shared/components/my-slider/MySlider.vue";
+import AppLoanSlider from "@/shared/components/app-loan-slider/AppLoanSlider.vue";
 import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
 import { useSeo } from "@/shared/services/seo";
-import { ceil } from "@/shared/utils/ceil.util";
-import { rupiahCurrency } from "@/shared/utils/rupiah.util";
 
 export default {
   name: "Landing",
 
   components: {
-    MyButton,
-    MySlider,
+    AppLoanSlider,
     MyTopBar,
   },
 
   setup() {
     const { setTitle } = useSeo();
 
-    const state = reactive({
-      loanAmount: "11",
-      loanPeriod: "13",
-    });
-
-    const installmentInRupiah = computed(() => {
-      const installmentsPerMonth =
-        (state.loanAmount * 1000000) / state.loanPeriod;
-      const loanInterest = state.loanAmount * 1000000 * 0.026;
-      const adminFee = state.loanAmount * 1000000 * 0.0065;
-
-      return rupiahCurrency(
-        ceil(installmentsPerMonth) + loanInterest + adminFee,
-      );
-    });
-
     onMounted(() => {
       setTitle(PAGE_TITLE);
     });
-
-    return { installmentInRupiah, state };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "@amar-ui-web/responsive/scss/breakpoints";
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.Landing {
+  &-hero {
+    @include amb-responsive-media("xs") {
+      margin-bottom: 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
+
+    @include amb-responsive-media("sm") {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @include amb-responsive-media("md") {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    @include amb-responsive-media("lg") {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+</style>
