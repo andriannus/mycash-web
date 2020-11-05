@@ -1,4 +1,4 @@
-import { GeneralFeature } from "./genera.enum";
+import { GeneralFeature } from "./general.enum";
 
 export const GENERAL_PAGE_PATH = {
   [GeneralFeature.AboutUs]: "/about-us",
