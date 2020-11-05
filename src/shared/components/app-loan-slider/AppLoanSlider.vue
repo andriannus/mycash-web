@@ -4,7 +4,7 @@
       'Card--borderless': props.borderless,
       'Card--elevated': props.elevated,
     }"
-    class="Card MarginBottom-base"
+    class="LoanSlider Card MarginBottom-base"
   >
     <div class="Card-body">
       <div class="MarginBottom-base">
