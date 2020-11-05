@@ -17,7 +17,7 @@ export default {
     transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  &-enter,
+  &-enter-from,
   &-leave-to {
     opacity: 0;
   }
