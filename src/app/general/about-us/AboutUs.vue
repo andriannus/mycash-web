@@ -235,12 +235,15 @@
       <general-footer></general-footer>
     </my-content>
   </my-page>
+
+  <app-apply-loan-button></app-apply-loan-button>
 </template>
 
 <script>
 import GeneralFooter from "../shared/components/general-footer/GeneralFooter.vue";
 import EasyAndFastIcon from "../shared/images/easy-and-fast.svg";
 
+import AppApplyLoanButton from "@/shared/components/app-apply-loan-button/AppApplyLoanButton.vue";
 import MyContent from "@/shared/components/my-content/MyContent.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
 import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
@@ -249,6 +252,7 @@ export default {
   name: "AboutUs",
 
   components: {
+    AppApplyLoanButton,
     EasyAndFastIcon,
     GeneralFooter,
     MyContent,
