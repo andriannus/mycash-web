@@ -19,6 +19,7 @@
   </div>
 
   <landing-achieved></landing-achieved>
+  <landing-testimonial></landing-testimonial>
   <landing-download></landing-download>
   <landing-advantages></landing-advantages>
 </template>
@@ -30,6 +31,7 @@ import { PAGE_TITLE } from "./landing.constant";
 import LandingAchieved from "./shared/components/landing-achieved/LandingAchieved.vue";
 import LandingAdvantages from "./shared/components/landing-advantages/LandingAdvantages.vue";
 import LandingDownload from "./shared/components/landing-download/LandingDownload.vue";
+import LandingTestimonial from "./shared/components/landing-testimonial/LandingTestimonial.vue";
 
 import AppLoanSlider from "@/shared/components/app-loan-slider/AppLoanSlider.vue";
 import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
@@ -43,6 +45,7 @@ export default {
     LandingAchieved,
     LandingAdvantages,
     LandingDownload,
+    LandingTestimonial,
     MyTopBar,
   },
 
