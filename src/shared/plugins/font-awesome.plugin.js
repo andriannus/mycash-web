@@ -6,6 +6,7 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import {
   faArrowLeft,
   faComment,
@@ -16,6 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 const icons = [
   faArrowLeft,
+  faCheckCircle,
   faComment,
   faEnvelope,
   faFacebook,
