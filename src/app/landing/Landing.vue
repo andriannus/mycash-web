@@ -23,6 +23,7 @@
   <landing-download></landing-download>
   <landing-advantages></landing-advantages>
   <landing-terms-loan></landing-terms-loan>
+  <landing-service-area></landing-service-area>
 </template>
 
 <script>
@@ -32,6 +33,7 @@ import { PAGE_TITLE } from "./landing.constant";
 import LandingAchieved from "./shared/components/landing-achieved/LandingAchieved.vue";
 import LandingAdvantages from "./shared/components/landing-advantages/LandingAdvantages.vue";
 import LandingDownload from "./shared/components/landing-download/LandingDownload.vue";
+import LandingServiceArea from "./shared/components/landing-service-area/LandingServiceArea.vue";
 import LandingTermsLoan from "./shared/components/landing-terms-loan/LandingTermsLoan.vue";
 import LandingTestimonial from "./shared/components/landing-testimonial/LandingTestimonial.vue";
 
@@ -47,6 +49,7 @@ export default {
     LandingAchieved,
     LandingAdvantages,
     LandingDownload,
+    LandingServiceArea,
     LandingTermsLoan,
     LandingTestimonial,
     MyTopBar,
