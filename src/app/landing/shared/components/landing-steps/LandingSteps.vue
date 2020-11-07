@@ -7,7 +7,7 @@
     </div>
 
     <div class="Grids Flex AlignItems-center">
-      <div class="Grid">
+      <div class="Grid Grid-12 Grid-sm-12 Grid-md-12 Grid-lg-6">
         <div
           v-for="(step, index) in steps"
           :key="index"
@@ -31,7 +31,9 @@
         </div>
       </div>
 
-      <div class="LandingSteps-illustration Grid">
+      <div
+        class="LandingSteps-illustration Grid Grid-12 Grid-sm-12 Grid-md-12 Grid-lg-6"
+      >
         <steps-illustration-icon></steps-illustration-icon>
       </div>
     </div>
@@ -87,7 +89,7 @@ export default {
     }
   }
 
-  @include amb-responsive-media("md") {
+  @include amb-responsive-media("lg") {
     &-illustration {
       align-items: center;
       display: flex;
