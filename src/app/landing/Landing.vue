@@ -25,6 +25,7 @@
   <landing-terms-loan></landing-terms-loan>
   <landing-steps></landing-steps>
   <landing-service-area></landing-service-area>
+  <landing-cost></landing-cost>
 </template>
 
 <script>
@@ -33,6 +34,7 @@ import { onMounted } from "vue";
 import { PAGE_TITLE } from "./landing.constant";
 import LandingAchieved from "./shared/components/landing-achieved/LandingAchieved.vue";
 import LandingAdvantages from "./shared/components/landing-advantages/LandingAdvantages.vue";
+import LandingCost from "./shared/components/landing-cost/LandingCost.vue";
 import LandingDownload from "./shared/components/landing-download/LandingDownload.vue";
 import LandingServiceArea from "./shared/components/landing-service-area/LandingServiceArea.vue";
 import LandingSteps from "./shared/components/landing-steps/LandingSteps.vue";
@@ -50,6 +52,7 @@ export default {
     AppLoanSlider,
     LandingAchieved,
     LandingAdvantages,
+    LandingCost,
     LandingDownload,
     LandingServiceArea,
     LandingSteps,
