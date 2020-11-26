@@ -110,8 +110,10 @@ export default {
       const isOutsideServiceArea = serviceArea.value === ServiceArea.Outside;
 
       if (isOutsideServiceArea) {
-        router.push(LOAN_PAGE_PATH[LoanFeature.OutsideArea]);
+        return router.push(LOAN_PAGE_PATH[LoanFeature.OutsideArea]);
       }
+
+      return router.push(LOAN_PAGE_PATH[LoanFeature.CreateAccount]);
     };
 
     return {
