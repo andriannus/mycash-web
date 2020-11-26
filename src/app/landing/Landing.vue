@@ -26,6 +26,8 @@
   <landing-steps></landing-steps>
   <landing-service-area></landing-service-area>
   <landing-cost></landing-cost>
+
+  <app-apply-loan-button></app-apply-loan-button>
 </template>
 
 <script>
@@ -41,6 +43,7 @@ import LandingSteps from "./shared/components/landing-steps/LandingSteps.vue";
 import LandingTermsLoan from "./shared/components/landing-terms-loan/LandingTermsLoan.vue";
 import LandingTestimonial from "./shared/components/landing-testimonial/LandingTestimonial.vue";
 
+import AppApplyLoanButton from "@/shared/components/app-apply-loan-button/AppApplyLoanButton.vue";
 import AppLoanSlider from "@/shared/components/app-loan-slider/AppLoanSlider.vue";
 import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
 import { useSeo } from "@/shared/services/seo";
@@ -49,6 +52,7 @@ export default {
   name: "Landing",
 
   components: {
+    AppApplyLoanButton,
     AppLoanSlider,
     LandingAchieved,
     LandingAdvantages,
