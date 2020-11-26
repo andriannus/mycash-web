@@ -1,5 +1,6 @@
 export const LoanFeature = {
   ConfirmArea: "loanConfirmArea",
+  CreateAccount: "loanCreateAccount",
   OutsideArea: "loanOutsideArea",
   Purpose: "loanPurpose",
   VentureCapital: "loanVentureCapital",

@@ -80,6 +80,7 @@ export const VENTURE_CAPITAL_OPTIONS = [
 
 export const LOAN_PAGE_PATH = {
   [LoanFeature.ConfirmArea]: "/loan/confirm-area",
+  [LoanFeature.CreateAccount]: "/loan/create-account",
   [LoanFeature.OutsideArea]: "/loan/outside-area",
   [LoanFeature.Purpose]: "/loan/purpose",
   [LoanFeature.VentureCapital]: "/loan/venture-capital",
@@ -89,6 +90,10 @@ export const LOAN_PAGES = [
   {
     documentTitle: "Konfirmasi Area Layanan",
     path: LOAN_PAGE_PATH[LoanFeature.ConfirmArea],
+  },
+  {
+    documentTitle: "Buat Akun",
+    path: LOAN_PAGE_PATH[LoanFeature.CreateAccount],
   },
   {
     documentTitle: "Diluar Area Layanan",

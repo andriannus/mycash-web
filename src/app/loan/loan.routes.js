@@ -41,6 +41,14 @@ const loanRoutes = [
             /* webpackChunkName: "loan-outside-area" */ "./loan-outside-area/LoanOutsideArea.vue"
           ),
       },
+      {
+        path: "create-account",
+        name: "LoanCreateAccount",
+        component: () =>
+          import(
+            /* webpackChunkName: "loan-create-account" */ "./loan-create-account/LoanCreateAccount.vue"
+          ),
+      },
     ],
   },
 ];
