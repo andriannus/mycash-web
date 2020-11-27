@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade">
+  <transition name="Fade">
     <slot></slot>
   </transition>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.fade {
+.Fade {
   &-enter-active,
   &-leave-active {
     transition: opacity 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);

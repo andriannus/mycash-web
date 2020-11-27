@@ -1,5 +1,5 @@
 <template>
-  <transition name="slide-up">
+  <transition name="SlideUp">
     <slot></slot>
   </transition>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.slide-up {
+.SlideUp {
   &-enter-active,
   &-leave-active {
     transition: all 0.3s ease-in-out;
