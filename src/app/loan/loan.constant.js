@@ -99,6 +99,7 @@ export const LOAN_PAGES = [
   {
     documentTitle: "Data KTP",
     path: LOAN_PAGE_PATH[LoanFeature.KtpData],
+    percentage: 20,
   },
   {
     documentTitle: "Diluar Area Layanan",

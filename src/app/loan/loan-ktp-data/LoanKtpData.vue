@@ -8,6 +8,14 @@
     </my-header>
 
     <my-content>
+      <template #progress>
+        <loan-progress :max="100" :value="pagePercentage"></loan-progress>
+      </template>
+
+      <p class="FontSize-small MarginBottom">
+        Lengkapi semua data di bawah ini sesuai dengan KTP Anda.
+      </p>
+
       <my-text-field
         id="TxtKtp"
         :disabled="true"
@@ -49,7 +57,11 @@
 </template>
 
 <script>
-import { reactive } from "vue";
+import { computed, reactive } from "vue";
+import { useRoute } from "vue-router";
+
+import { LOAN_PAGES } from "../loan.constant";
+import LoanProgress from "../shared/components/loan-progress/LoanProgress.vue";
 
 import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
 import MyButton from "@/shared/components/my-button/MyButton.vue";
@@ -65,6 +77,7 @@ export default {
   name: "LoanKtpData",
 
   components: {
+    LoanProgress,
     MyBackButton,
     MyButton,
     MyContent,
@@ -77,11 +90,18 @@ export default {
   },
 
   setup() {
+    const route = useRoute();
+
     const setup = reactive({
       isBackButtonShown: false,
     });
 
-    return { setup };
+    const pagePercentage = computed(() => {
+      const selectedPage = LOAN_PAGES.find(({ path }) => path === route.path);
+      return selectedPage.percentage;
+    });
+
+    return { pagePercentage, setup };
   },
 };
 </script>
