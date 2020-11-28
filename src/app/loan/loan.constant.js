@@ -81,6 +81,7 @@ export const VENTURE_CAPITAL_OPTIONS = [
 export const LOAN_PAGE_PATH = {
   [LoanFeature.ConfirmArea]: "/loan/confirm-area",
   [LoanFeature.CreateAccount]: "/loan/create-account",
+  [LoanFeature.KtpAddress]: "/loan/ktp-address",
   [LoanFeature.KtpData]: "/loan/ktp-data",
   [LoanFeature.OutsideArea]: "/loan/outside-area",
   [LoanFeature.Purpose]: "/loan/purpose",
@@ -97,11 +98,6 @@ export const LOAN_PAGES = [
     path: LOAN_PAGE_PATH[LoanFeature.CreateAccount],
   },
   {
-    documentTitle: "Data KTP",
-    path: LOAN_PAGE_PATH[LoanFeature.KtpData],
-    percentage: 20,
-  },
-  {
     documentTitle: "Diluar Area Layanan",
     path: LOAN_PAGE_PATH[LoanFeature.OutsideArea],
   },
@@ -112,5 +108,15 @@ export const LOAN_PAGES = [
   {
     documentTitle: "Penggunaan Modal Usaha",
     path: LOAN_PAGE_PATH[LoanFeature.VentureCapital],
+  },
+  {
+    documentTitle: "Data KTP",
+    path: LOAN_PAGE_PATH[LoanFeature.KtpData],
+    percentage: 20,
+  },
+  {
+    documentTitle: "Alamat KTP",
+    path: LOAN_PAGE_PATH[LoanFeature.KtpAddress],
+    percentage: 30,
   },
 ];

@@ -34,6 +34,14 @@ const loanRoutes = [
           ),
       },
       {
+        path: "ktp-address",
+        name: "LoanKtpAddress",
+        component: () =>
+          import(
+            /* webpackChunkName: "loan-ktp-address" */ "./loan-ktp-address/LoanKtpAddress.vue"
+          ),
+      },
+      {
         path: "ktp-data",
         name: "LoanKtpData",
         component: () =>
