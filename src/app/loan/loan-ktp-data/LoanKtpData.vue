@@ -50,7 +50,9 @@
       </div>
 
       <template #contentFooter>
-        <my-button color="primary" full-width>Lanjutkan</my-button>
+        <my-button color="primary" full-width @click="onClickNextButton">
+          Lanjutkan
+        </my-button>
       </template>
     </my-content>
   </my-page>
@@ -58,9 +60,10 @@
 
 <script>
 import { computed, reactive } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
-import { LOAN_PAGES } from "../loan.constant";
+import { LOAN_PAGE_PATH, LOAN_PAGES } from "../loan.constant";
+import { LoanFeature } from "../loan.enum";
 import LoanProgress from "../shared/components/loan-progress/LoanProgress.vue";
 
 import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
@@ -91,6 +94,7 @@ export default {
 
   setup() {
     const route = useRoute();
+    const router = useRouter();
 
     const setup = reactive({
       isBackButtonShown: false,
@@ -101,7 +105,15 @@ export default {
       return selectedPage.percentage;
     });
 
-    return { pagePercentage, setup };
+    const onClickNextButton = () => {
+      router.push(LOAN_PAGE_PATH[LoanFeature.KtpAddress]);
+    };
+
+    return {
+      onClickNextButton,
+      pagePercentage,
+      setup,
+    };
   },
 };
 </script>
