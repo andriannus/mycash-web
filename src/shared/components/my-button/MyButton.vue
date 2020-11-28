@@ -41,6 +41,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    text: {
+      type: Boolean,
+      default: false,
+    },
     to: {
       type: String,
       default: "",
@@ -65,7 +69,10 @@ export default {
       {
         "Button--outlined": props.outlined,
       },
-      ...(props.className && props.className),
+      {
+        "Button--text": props.text,
+      },
+      props.className && props.className,
       `Button`,
     ];
 
