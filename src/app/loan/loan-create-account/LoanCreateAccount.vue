@@ -55,15 +55,38 @@
         </my-button>
       </template>
     </my-content>
+
+    <my-dialog v-model="state.isDialogShown">
+      <p class="Color-gray-50 MarginBottom">
+        Apakah nomor handphone Anda sudah benar? Pastikan nomor Anda aktif untuk
+        menerima sms kode verifikasi kami.
+      </p>
+
+      <p>
+        <strong>+628512312412</strong>
+      </p>
+
+      <div class="Flex JustifyContent-end MarginTop-large">
+        <button
+          class="Button Button--text MarginRight-2xsmall Button--primary"
+          @click="toggleDialogShow"
+        >
+          Ubah
+        </button>
+
+        <button class="Button Button--primary">Ya, Lanjutkan</button>
+      </div>
+    </my-dialog>
   </my-page>
 </template>
 
 <script>
-import { computed, ref } from "vue";
+import { reactive } from "vue";
 
 import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
 import MyButton from "@/shared/components/my-button/MyButton.vue";
 import MyContent from "@/shared/components/my-content/MyContent.vue";
+import MyDialog from "@/shared/components/my-dialog/MyDialog.vue";
 import MyHeader from "@/shared/components/my-header/MyHeader.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
 import MyTextField from "@/shared/components/my-text-field/MyTextField.vue";
@@ -77,6 +100,7 @@ export default {
     MyBackButton,
     MyButton,
     MyContent,
+    MyDialog,
     MyHeader,
     MyPage,
     MyTextField,
@@ -85,17 +109,22 @@ export default {
   },
 
   setup() {
-    const serviceArea = ref(null);
-    const hasNotBeenSelected = computed(() => !serviceArea.value);
+    const state = reactive({
+      isDialogShown: false,
+    });
+
+    const toggleDialogShow = () => {
+      state.isDialogShown = !state.isDialogShown;
+    };
 
     const onClickNextButton = () => {
-      console.log("OK");
+      toggleDialogShow();
     };
 
     return {
-      hasNotBeenSelected,
       onClickNextButton,
-      serviceArea,
+      state,
+      toggleDialogShow,
     };
   },
 };
