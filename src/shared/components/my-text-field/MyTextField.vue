@@ -14,6 +14,7 @@
         :id="id"
         :class="{ 'Input--danger': isErrorExist }"
         class="Input"
+        :disabled="disabled"
         :placeholder="placeholder"
         :type="type"
         @input="onInput"
@@ -33,6 +34,10 @@ export default {
   name: "MyTextField",
 
   props: {
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
     errors: {
       type: Array,
       default() {
