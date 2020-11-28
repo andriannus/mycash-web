@@ -1,8 +1,13 @@
 <template>
+  <slot name="progress"></slot>
+
   <div
     :class="[
       {
         'MyContent--hasToolbar': hasToolbar,
+      },
+      {
+        'MyContent--hasProgress': hasProgress,
       },
       hasClassName && props.className,
     ]"
@@ -85,12 +90,14 @@ export default {
     const hasContentFooter = computed(() => !!slots.contentFooter);
     const hasContentHeader = computed(() => !!slots.contentHeader);
     const hasPadding = computed(() => !!props.padding);
+    const hasProgress = computed(() => !!slots.progress);
 
     return {
       hasClassName,
       hasContentFooter,
       hasContentHeader,
       hasPadding,
+      hasProgress,
       props,
     };
   },
@@ -107,6 +114,10 @@ export default {
 
   &--hasToolbar {
     min-height: calc(100vh - 56px);
+
+    &.MyContent--hasProgress {
+      min-height: calc(100vh - 56px - 52px);
+    }
   }
 }
 </style>
