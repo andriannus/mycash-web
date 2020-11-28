@@ -67,14 +67,18 @@
       </p>
 
       <div class="Flex JustifyContent-end MarginTop-large">
-        <button
-          class="Button Button--text MarginRight-2xsmall Button--primary"
+        <my-button
+          className="MarginRight-2xsmall"
+          color="primary"
+          :text="true"
           @click="toggleDialogShow"
         >
           Ubah
-        </button>
+        </my-button>
 
-        <button class="Button Button--primary">Ya, Lanjutkan</button>
+        <my-button color="primary" @click="onClickConfirmButton">
+          Ya, Lanjutkan
+        </my-button>
       </div>
     </my-dialog>
   </my-page>
@@ -82,6 +86,10 @@
 
 <script>
 import { reactive } from "vue";
+import { useRouter } from "vue-router";
+
+import { LOAN_PAGE_PATH } from "../loan.constant";
+import { LoanFeature } from "../loan.enum";
 
 import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
 import MyButton from "@/shared/components/my-button/MyButton.vue";
@@ -109,6 +117,8 @@ export default {
   },
 
   setup() {
+    const router = useRouter();
+
     const state = reactive({
       isDialogShown: false,
     });
@@ -121,7 +131,12 @@ export default {
       toggleDialogShow();
     };
 
+    const onClickConfirmButton = () => {
+      router.push(LOAN_PAGE_PATH[LoanFeature.KtpData]);
+    };
+
     return {
+      onClickConfirmButton,
       onClickNextButton,
       state,
       toggleDialogShow,
