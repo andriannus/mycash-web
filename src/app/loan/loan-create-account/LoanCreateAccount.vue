@@ -93,7 +93,7 @@ import { LoanFeature } from "../loan.enum";
 
 import MyBackButton from "@/shared/components/back-button/back-button.component.vue";
 import MyButton from "@/shared/components/button/button.component.vue";
-import MyContent from "@/shared/components/my-content/MyContent.vue";
+import MyContent from "@/shared/components/content/content.component.vue";
 import MyDialog from "@/shared/components/my-dialog/MyDialog.vue";
 import MyHeader from "@/shared/components/my-header/MyHeader.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";

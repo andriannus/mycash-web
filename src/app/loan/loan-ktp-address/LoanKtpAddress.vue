@@ -56,7 +56,7 @@ import LoanProgress from "../shared/components/loan-progress/LoanProgress.vue";
 
 import MyBackButton from "@/shared/components/back-button/back-button.component.vue";
 import MyButton from "@/shared/components/button/button.component.vue";
-import MyContent from "@/shared/components/my-content/MyContent.vue";
+import MyContent from "@/shared/components/content/content.component.vue";
 import MyHeader from "@/shared/components/my-header/MyHeader.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
 import MyTextField from "@/shared/components/my-text-field/MyTextField.vue";
