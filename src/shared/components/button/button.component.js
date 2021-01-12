@@ -1,24 +1,7 @@
-<template>
-  <router-link v-if="isLink" :class="buttonClassNames" :to="to">
-    <slot></slot>
-  </router-link>
+import { computed, defineComponent } from "vue";
 
-  <button
-    v-else
-    :class="buttonClassNames"
-    :disabled="disabled"
-    :type="type"
-    @click="emit('onClick')"
-  >
-    <slot></slot>
-  </button>
-</template>
-
-<script>
-import { computed } from "vue";
-
-export default {
-  name: "MyButton",
+export default defineComponent({
+  name: "Button",
 
   props: {
     className: {
@@ -78,5 +61,4 @@ export default {
 
     return { buttonClassNames, emit, isLink };
   },
-};
-</script>
+});
