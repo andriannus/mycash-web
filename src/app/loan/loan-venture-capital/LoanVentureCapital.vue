@@ -35,7 +35,7 @@ import { useRouter } from "vue-router";
 import { LOAN_PAGE_PATH, VENTURE_CAPITAL_OPTIONS } from "../loan.constant";
 import { LoanFeature } from "../loan.enum";
 
-import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
+import MyBackButton from "@/shared/components/back-button/back-button.component.vue";
 import MyButton from "@/shared/components/my-button/MyButton.vue";
 import MyContent from "@/shared/components/my-content/MyContent.vue";
 import MyHeader from "@/shared/components/my-header/MyHeader.vue";

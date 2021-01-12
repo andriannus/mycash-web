@@ -76,7 +76,7 @@ import { LOAN_PAGE_PATH } from "../loan.constant";
 import { LoanFeature, ServiceArea } from "../loan.enum";
 import ServiceAreaIcon from "../shared/images/service-area.svg";
 
-import MyBackButton from "@/shared/components/my-back-button/MyBackButton.vue";
+import MyBackButton from "@/shared/components/back-button/back-button.component.vue";
 import MyButton from "@/shared/components/my-button/MyButton.vue";
 import MyContent from "@/shared/components/my-content/MyContent.vue";
 import MyHeader from "@/shared/components/my-header/MyHeader.vue";
