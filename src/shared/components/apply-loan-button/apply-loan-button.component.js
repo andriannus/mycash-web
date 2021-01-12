@@ -1,19 +1,3 @@
-<template>
-  <teleport to="body">
-    <my-slide-up-transition>
-      <button
-        v-if="isShowApplyLoanButton"
-        class="ApplyLoanButton Button Button--primary Button--elevated Button--rounded"
-        type="button"
-        @click="onClickButton"
-      >
-        Ajukan Pinjaman
-      </button>
-    </my-slide-up-transition>
-  </teleport>
-</template>
-
-<script>
 import { onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
@@ -21,7 +5,7 @@ import MySlideUpTransition from "@/shared/transitions/MySlideUpTransition.vue";
 import { scrollToElement } from "@/shared/utils/scroll";
 
 export default {
-  name: "AppApplyLoanButton",
+  name: "ApplyLoanButton",
 
   components: {
     MySlideUpTransition,
@@ -62,15 +46,3 @@ export default {
     return { isShowApplyLoanButton, onClickButton };
   },
 };
-</script>
-
-<style lang="scss" scoped>
-.ApplyLoanButton {
-  bottom: 1rem;
-  right: 0;
-  left: 0;
-  position: fixed;
-  margin: auto;
-  width: 11rem;
-}
-</style>
