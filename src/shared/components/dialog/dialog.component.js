@@ -1,28 +1,11 @@
-<template>
-  <teleport to="body">
-    <my-bounce-transition>
-      <div v-if="modelValue" class="Dialog">
-        <div class="Dialog-backdrop"></div>
+import { defineComponent, onUnmounted, reactive, watch } from "vue";
 
-        <div class="Dialog-box">
-          <div class="Dialog-block">
-            <slot></slot>
-          </div>
-        </div>
-      </div>
-    </my-bounce-transition>
-  </teleport>
-</template>
-
-<script>
-import { onUnmounted, reactive, watch } from "vue";
-
-import { CLIP_CLASS } from "./my-dialog.constant";
+import { CLIP_CLASS } from "./dialog.constant";
 
 import MyBounceTransition from "@/shared/transitions/MyBounceTransition.vue";
 
-export default {
-  name: "MyDialog",
+export default defineComponent({
+  name: "Dialog",
 
   components: {
     MyBounceTransition,
@@ -71,5 +54,4 @@ export default {
       }
     };
   },
-};
-</script>
+});
