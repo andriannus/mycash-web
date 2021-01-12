@@ -1,10 +1,10 @@
-import { onMounted, onUnmounted, ref } from "vue";
+import { defineComponent, onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
 import MySlideUpTransition from "@/shared/transitions/MySlideUpTransition.vue";
 import { scrollToElement } from "@/shared/utils/scroll";
 
-export default {
+export default defineComponent({
   name: "ApplyLoanButton",
 
   components: {
@@ -45,4 +45,4 @@ export default {
 
     return { isShowApplyLoanButton, onClickButton };
   },
-};
+});
