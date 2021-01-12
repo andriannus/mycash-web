@@ -1,15 +1,8 @@
-<template>
-  <button :class="buttonColor" class="MyBackButton" @click="onClickButton">
-    <my-icon icon="arrow-left"></my-icon>
-  </button>
-</template>
-
-<script>
+import { computed, defineComponent } from "vue";
 import { useRouter } from "vue-router";
-import { computed } from "vue";
 
-export default {
-  name: "MyBackButton",
+export default defineComponent({
+  name: "BackButton",
 
   props: {
     color: {
@@ -38,16 +31,4 @@ export default {
 
     return { buttonColor, onClickButton };
   },
-};
-</script>
-
-<style lang="scss" scoped>
-.MyBackButton {
-  align-items: center;
-  cursor: pointer;
-  display: inline-flex;
-  height: 24px;
-  justify-content: center;
-  width: 24px;
-}
-</style>
+});
