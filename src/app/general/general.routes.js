@@ -9,7 +9,9 @@ const generalRoutes = [
         path: "about-us",
         name: "AboutUs",
         component: () =>
-          import(/* webpackChunkName: "about-us" */ "./about-us/AboutUs.vue"),
+          import(
+            /* webpackChunkName: "about-us" */ "./about-us/about-us.component.vue"
+          ),
       },
     ],
   },
