@@ -1,0 +1,38 @@
+.AboutUs {
+  &-header {
+    background-image: url("/images/general/png/about-us-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-bptw {
+    background-image: url("/images/general/png/best-place-to-work-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-career {
+    background-image: url("/images/general/png/career.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-ourOffice {
+    .Card {
+      padding: 0;
+    }
+  }
+
+  &-why {
+    li {
+      display: flex;
+
+      &:before {
+        content: "•";
+        margin-right: 1rem;
+        min-width: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}
