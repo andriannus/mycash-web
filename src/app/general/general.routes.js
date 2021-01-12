@@ -1,4 +1,4 @@
-import General from "./General.vue";
+import General from "./general.component.vue";
 
 const generalRoutes = [
   {
