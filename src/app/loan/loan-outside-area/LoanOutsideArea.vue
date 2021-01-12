@@ -50,7 +50,7 @@
 <script>
 import ServiceAreaIcon from "../shared/images/service-area.svg";
 
-import MyButton from "@/shared/components/my-button/MyButton.vue";
+import MyButton from "@/shared/components/button/button.component.vue";
 import MyContent from "@/shared/components/my-content/MyContent.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
 
