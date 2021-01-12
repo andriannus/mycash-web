@@ -44,7 +44,7 @@ import LandingTermsLoan from "./shared/components/landing-terms-loan/LandingTerm
 import LandingTestimonial from "./shared/components/landing-testimonial/LandingTestimonial.vue";
 
 import AppApplyLoanButton from "@/shared/components/apply-loan-button/apply-loan-button.component.vue";
-import AppLoanSlider from "@/shared/components/app-loan-slider/AppLoanSlider.vue";
+import AppLoanSlider from "@/shared/components/loan-slider/loan-slider.component.vue";
 import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
 import { useSeo } from "@/shared/services/seo";
 
