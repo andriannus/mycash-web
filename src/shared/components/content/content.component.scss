@@ -1,0 +1,15 @@
+.MyContent {
+  min-height: 100vh;
+
+  &-body {
+    flex-grow: 1;
+  }
+
+  &--hasToolbar {
+    min-height: calc(100vh - 56px);
+
+    &.MyContent--hasProgress {
+      min-height: calc(100vh - 56px - 52px);
+    }
+  }
+}
