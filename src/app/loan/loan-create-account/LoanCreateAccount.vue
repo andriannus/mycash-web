@@ -98,7 +98,7 @@ import MyDialog from "@/shared/components/dialog/dialog.component.vue";
 import MyHeader from "@/shared/components/header/header.component.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
 import MyTextField from "@/shared/components/my-text-field/MyTextField.vue";
-import MyTitle from "@/shared/components/my-title/MyTitle.vue";
+import MyTitle from "@/shared/components/title/title.component.vue";
 import MyToolbar from "@/shared/components/my-toolbar/MyToolbar.vue";
 
 export default {
