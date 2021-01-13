@@ -61,7 +61,7 @@ import MyHeader from "@/shared/components/header/header.component.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
 import MyTextField from "@/shared/components/my-text-field/MyTextField.vue";
 import MyTitle from "@/shared/components/title/title.component.vue";
-import MyToolbar from "@/shared/components/my-toolbar/MyToolbar.vue";
+import MyToolbar from "@/shared/components/toolbar/toolbar.component.vue";
 
 export default {
   name: "LoanKtpAddress",
