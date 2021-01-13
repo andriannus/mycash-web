@@ -7,7 +7,7 @@ import {
 } from "./loan-slider.constant";
 
 import MyButton from "@/shared/components/button/button.component.vue";
-import MySlider from "@/shared/components/my-slider/MySlider.vue";
+import MySlider from "@/shared/components/slider/slider.component.vue";
 import { ceil } from "@/shared/utils/ceil.util";
 import { rupiahCurrency } from "@/shared/utils/rupiah.util";
 
