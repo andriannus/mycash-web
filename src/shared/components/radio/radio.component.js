@@ -1,25 +1,7 @@
-<template>
-  <div :class="[hasClassName ? className : '']" class="Radio">
-    <input
-      :id="id"
-      class="Radio-control"
-      :name="name"
-      type="radio"
-      :value="modelValue"
-      @change="onChange"
-    />
+import { computed, defineComponent } from "vue";
 
-    <label class="Radio-label" :for="id">
-      <slot></slot>
-    </label>
-  </div>
-</template>
-
-<script>
-import { computed } from "vue";
-
-export default {
-  name: "MyRadio",
+export default defineComponent({
+  name: "Radio",
 
   props: {
     className: {
@@ -51,5 +33,4 @@ export default {
 
     return { hasClassName, onChange };
   },
-};
-</script>
+});
