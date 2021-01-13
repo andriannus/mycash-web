@@ -40,7 +40,7 @@ import MyButton from "@/shared/components/button/button.component.vue";
 import MyContent from "@/shared/components/content/content.component.vue";
 import MyHeader from "@/shared/components/header/header.component.vue";
 import MyPage from "@/shared/components/my-page/MyPage.vue";
-import MyRadioGroup from "@/shared/components/my-radio-group/MyRadioGroup.vue";
+import MyRadioGroup from "@/shared/components/radio-group/radio-group.component.vue";
 import MyTitle from "@/shared/components/my-title/MyTitle.vue";
 import MyToolbar from "@/shared/components/my-toolbar/MyToolbar.vue";
 
