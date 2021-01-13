@@ -45,7 +45,7 @@ import LandingTestimonial from "./shared/components/landing-testimonial/LandingT
 
 import AppApplyLoanButton from "@/shared/components/apply-loan-button/apply-loan-button.component.vue";
 import AppLoanSlider from "@/shared/components/loan-slider/loan-slider.component.vue";
-import MyTopBar from "@/shared/components/my-top-bar/MyTopBar.vue";
+import MyTopBar from "@/shared/components/top-bar/top-bar.component.vue";
 import { useSeo } from "@/shared/services/seo";
 
 export default {
