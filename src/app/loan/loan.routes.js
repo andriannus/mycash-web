@@ -14,7 +14,7 @@ const loanRoutes = [
         name: "LoanPurpose",
         component: () =>
           import(
-            /* webpackChunkName: "loan-purpose" */ "./loan-purpose/LoanPurpose.vue"
+            /* webpackChunkName: "loan-purpose" */ "./loan-purpose/loan-purpose.component.vue"
           ),
       },
       {
@@ -22,7 +22,7 @@ const loanRoutes = [
         name: "LoanVentureCapital",
         component: () =>
           import(
-            /* webpackChunkName: "loan-venture-capital" */ "./loan-venture-capital/LoanVentureCapital.vue"
+            /* webpackChunkName: "loan-venture-capital" */ "./loan-venture-capital/loan-venture-capital.component.vue"
           ),
       },
       {
@@ -30,7 +30,7 @@ const loanRoutes = [
         name: "LoanConfirmArea",
         component: () =>
           import(
-            /* webpackChunkName: "loan-confirm-area" */ "./loan-confirm-area/LoanConfirmArea.vue"
+            /* webpackChunkName: "loan-confirm-area" */ "./loan-confirm-area/loan-confirm-area.component.vue"
           ),
       },
       {
@@ -38,7 +38,7 @@ const loanRoutes = [
         name: "LoanKtpAddress",
         component: () =>
           import(
-            /* webpackChunkName: "loan-ktp-address" */ "./loan-ktp-address/LoanKtpAddress.vue"
+            /* webpackChunkName: "loan-ktp-address" */ "./loan-ktp-address/loan-ktp-address.component.vue"
           ),
       },
       {
@@ -46,7 +46,7 @@ const loanRoutes = [
         name: "LoanKtpData",
         component: () =>
           import(
-            /* webpackChunkName: "loan-ktp-data" */ "./loan-ktp-data/LoanKtpData.vue"
+            /* webpackChunkName: "loan-ktp-data" */ "./loan-ktp-data/loan-ktp-data.component.vue"
           ),
       },
       {
@@ -54,7 +54,7 @@ const loanRoutes = [
         name: "LoanOutsideArea",
         component: () =>
           import(
-            /* webpackChunkName: "loan-outside-area" */ "./loan-outside-area/LoanOutsideArea.vue"
+            /* webpackChunkName: "loan-outside-area" */ "./loan-outside-area/loan-outside-area.component.vue"
           ),
       },
       {
@@ -62,7 +62,7 @@ const loanRoutes = [
         name: "LoanCreateAccount",
         component: () =>
           import(
-            /* webpackChunkName: "loan-create-account" */ "./loan-create-account/LoanCreateAccount.vue"
+            /* webpackChunkName: "loan-create-account" */ "./loan-create-account/loan-create-account.component.vue"
           ),
       },
     ],
