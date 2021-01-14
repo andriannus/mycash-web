@@ -47,21 +47,4 @@
   </my-page>
 </template>
 
-<script>
-import ServiceAreaIcon from "../shared/images/service-area.svg";
-
-import MyButton from "@/shared/components/button/button.component.vue";
-import MyContent from "@/shared/components/content/content.component.vue";
-import MyPage from "@/shared/components/page/page.component.vue";
-
-export default {
-  name: "LoanOutsideArea",
-
-  components: {
-    MyButton,
-    MyContent,
-    MyPage,
-    ServiceAreaIcon,
-  },
-};
-</script>
+<script src="./loan-outside-area.component.js"></script>
