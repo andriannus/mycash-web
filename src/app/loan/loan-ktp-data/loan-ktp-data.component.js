@@ -3,7 +3,7 @@ import { useRoute, useRouter } from "vue-router";
 
 import { LOAN_PAGE_PATH, LOAN_PAGES } from "../loan.constant";
 import { LoanFeature } from "../loan.enum";
-import LoanProgress from "../shared/components/loan-progress/LoanProgress.vue";
+import LoanProgress from "../shared/components/loan-progress/loan-progress.component.vue";
 
 import MyBackButton from "@/shared/components/back-button/back-button.component.vue";
 import MyButton from "@/shared/components/button/button.component.vue";
