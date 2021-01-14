@@ -1,35 +1,4 @@
-<template>
-  <my-page>
-    <my-header>
-      <my-toolbar>
-        <my-back-button></my-back-button>
-        <my-title>Penggunaan Modal Usaha</my-title>
-      </my-toolbar>
-    </my-header>
-
-    <my-content>
-      <my-radio-group
-        v-model="loanPurpose"
-        id="RbLoanPurpose"
-        :options="options"
-      ></my-radio-group>
-
-      <template #contentFooter>
-        <my-button
-          color="primary"
-          :disabled="hasNotBeenSelected"
-          full-width
-          @click="onClickNextButton"
-        >
-          Lanjutkan
-        </my-button>
-      </template>
-    </my-content>
-  </my-page>
-</template>
-
-<script>
-import { computed, ref } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import { useRouter } from "vue-router";
 
 import { LOAN_PAGE_PATH, VENTURE_CAPITAL_OPTIONS } from "../loan.constant";
@@ -44,7 +13,7 @@ import MyRadioGroup from "@/shared/components/radio-group/radio-group.component.
 import MyTitle from "@/shared/components/title/title.component.vue";
 import MyToolbar from "@/shared/components/toolbar/toolbar.component.vue";
 
-export default {
+export default defineComponent({
   name: "LoanVentureCapital",
 
   components: {
@@ -76,5 +45,4 @@ export default {
       options,
     };
   },
-};
-</script>
+});
