@@ -1,4 +1,4 @@
-import Loan from "./Loan.vue";
+import Loan from "./loan.component.vue";
 
 const loanRoutes = [
   {
