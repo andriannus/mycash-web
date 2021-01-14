@@ -1,0 +1,47 @@
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.Landing {
+  &-hero {
+    @include amb-responsive-media("xs") {
+      margin-bottom: 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
+
+    @include amb-responsive-media("sm") {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @include amb-responsive-media("md") {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    @include amb-responsive-media("lg") {
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
