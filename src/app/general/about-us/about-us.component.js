@@ -5,7 +5,7 @@ import EasyAndFastIcon from "../shared/images/easy-and-fast.svg";
 
 import AppApplyLoanButton from "@/shared/components/apply-loan-button/apply-loan-button.component.vue";
 import MyContent from "@/shared/components/content/content.component.vue";
-import MyPage from "@/shared/components/my-page/MyPage.vue";
+import MyPage from "@/shared/components/page/page.component.vue";
 import MyTopBar from "@/shared/components/top-bar/top-bar.component.vue";
 
 export default defineComponent({

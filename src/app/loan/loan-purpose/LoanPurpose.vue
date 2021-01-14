@@ -39,7 +39,7 @@ import MyBackButton from "@/shared/components/back-button/back-button.component.
 import MyButton from "@/shared/components/button/button.component.vue";
 import MyContent from "@/shared/components/content/content.component.vue";
 import MyHeader from "@/shared/components/header/header.component.vue";
-import MyPage from "@/shared/components/my-page/MyPage.vue";
+import MyPage from "@/shared/components/page/page.component.vue";
 import MyRadioGroup from "@/shared/components/radio-group/radio-group.component.vue";
 import MyTitle from "@/shared/components/title/title.component.vue";
 import MyToolbar from "@/shared/components/toolbar/toolbar.component.vue";

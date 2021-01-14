@@ -96,7 +96,7 @@ import MyButton from "@/shared/components/button/button.component.vue";
 import MyContent from "@/shared/components/content/content.component.vue";
 import MyDialog from "@/shared/components/dialog/dialog.component.vue";
 import MyHeader from "@/shared/components/header/header.component.vue";
-import MyPage from "@/shared/components/my-page/MyPage.vue";
+import MyPage from "@/shared/components/page/page.component.vue";
 import MyTextField from "@/shared/components/my-text-field/MyTextField.vue";
 import MyTitle from "@/shared/components/title/title.component.vue";
 import MyToolbar from "@/shared/components/toolbar/toolbar.component.vue";
