@@ -1,28 +1,3 @@
-<template>
-  <div class="Progress">
-    <progress class="Progress-bar" :max="max" :value="value"></progress>
-    <span class="Progress-value">{{ value }}%</span>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "LoanProgress",
-
-  props: {
-    max: {
-      type: Number,
-      default: 0,
-    },
-    value: {
-      type: Number,
-      default: 0,
-    },
-  },
-};
-</script>
-
-<style lang="scss" scoped>
 @import "@amar-ui-web/color/color";
 
 .Progress {
@@ -67,4 +42,3 @@ export default {
     text-align: right;
   }
 }
-</style>
