@@ -6,10 +6,10 @@ import {
   LOAN_INTEREST,
 } from "./loan-slider.constant";
 
-import MyButton from "@/shared/components/button/button.component.vue";
-import MySlider from "@/shared/components/slider/slider.component.vue";
-import { ceil } from "@/shared/utils/ceil.util";
-import { rupiahCurrency } from "@/shared/utils/rupiah.util";
+import MyButton from "@/app/shared/components/button/button.component.vue";
+import MySlider from "@/app/shared/components/slider/slider.component.vue";
+import { ceil } from "@/app/shared/utils/ceil.util";
+import { rupiahCurrency } from "@/app/shared/utils/rupiah.util";
 
 export default defineComponent({
   name: "LoanSlider",

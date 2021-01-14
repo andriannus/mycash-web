@@ -2,7 +2,7 @@ import { defineComponent, onUnmounted, reactive, watch } from "vue";
 
 import { CLIP_CLASS } from "./dialog.constant";
 
-import MyBounceTransition from "@/shared/components/bounce-transition/bounce-transition.component.vue";
+import MyBounceTransition from "@/app/shared/components/bounce-transition/bounce-transition.component.vue";
 
 export default defineComponent({
   name: "Dialog",

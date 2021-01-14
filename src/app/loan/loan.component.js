@@ -3,8 +3,8 @@ import { useRoute } from "vue-router";
 
 import { LOAN_PAGES } from "./loan.constant";
 
-import { useSeo } from "@/shared/services/seo";
-import MyFadeTransition from "@/shared/components/fade-transition/fade-transition.component.vue";
+import { useSeo } from "@/app/shared/services/seo";
+import MyFadeTransition from "@/app/shared/components/fade-transition/fade-transition.component.vue";
 
 export default defineComponent({
   name: "Loan",

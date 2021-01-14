@@ -1,8 +1,8 @@
 import { defineComponent, onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
-import MySlideUpTransition from "@/shared/components/slide-up-transition/slide-up-transition.component.vue";
-import { scrollToElement } from "@/shared/utils/scroll";
+import MySlideUpTransition from "@/app/shared/components/slide-up-transition/slide-up-transition.component.vue";
+import { scrollToElement } from "@/app/shared/utils/scroll";
 
 export default defineComponent({
   name: "ApplyLoanButton",

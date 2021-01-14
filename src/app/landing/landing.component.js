@@ -10,10 +10,10 @@ import LandingSteps from "./shared/components/landing-steps/LandingSteps.vue";
 import LandingTermsLoan from "./shared/components/landing-terms-loan/LandingTermsLoan.vue";
 import LandingTestimonial from "./shared/components/landing-testimonial/LandingTestimonial.vue";
 
-import AppApplyLoanButton from "@/shared/components/apply-loan-button/apply-loan-button.component.vue";
-import AppLoanSlider from "@/shared/components/loan-slider/loan-slider.component.vue";
-import MyTopBar from "@/shared/components/top-bar/top-bar.component.vue";
-import { useSeo } from "@/shared/services/seo";
+import AppApplyLoanButton from "@/app/shared/components/apply-loan-button/apply-loan-button.component.vue";
+import AppLoanSlider from "@/app/shared/components/loan-slider/loan-slider.component.vue";
+import MyTopBar from "@/app/shared/components/top-bar/top-bar.component.vue";
+import { useSeo } from "@/app/shared/services/seo";
 
 export default defineComponent({
   name: "Landing",
