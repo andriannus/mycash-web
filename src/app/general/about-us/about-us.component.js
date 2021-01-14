@@ -1,6 +1,6 @@
 import { defineComponent } from "vue";
 
-import GeneralFooter from "../shared/components/general-footer/GeneralFooter.vue";
+import GeneralFooter from "../shared/components/general-footer/general-footer.component.vue";
 import EasyAndFastIcon from "../shared/images/easy-and-fast.svg";
 
 import AppApplyLoanButton from "@/shared/components/apply-loan-button/apply-loan-button.component.vue";
