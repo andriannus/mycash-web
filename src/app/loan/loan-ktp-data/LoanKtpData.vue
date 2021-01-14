@@ -72,7 +72,7 @@ import MyContent from "@/shared/components/content/content.component.vue";
 import MyHeader from "@/shared/components/header/header.component.vue";
 import MyPage from "@/shared/components/page/page.component.vue";
 import MyRadio from "@/shared/components/radio/radio.component.vue";
-import MyTextField from "@/shared/components/my-text-field/MyTextField.vue";
+import MyTextField from "@/shared/components/text-field/text-field.component.vue";
 import MyTitle from "@/shared/components/title/title.component.vue";
 import MyToolbar from "@/shared/components/toolbar/toolbar.component.vue";
 
