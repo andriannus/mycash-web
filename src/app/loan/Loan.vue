@@ -13,7 +13,7 @@ import { useRoute } from "vue-router";
 import { LOAN_PAGES } from "./loan.constant";
 
 import { useSeo } from "@/shared/services/seo";
-import MyFadeTransition from "@/shared/transitions/MyFadeTransition.vue";
+import MyFadeTransition from "@/shared/components/fade-transition/fade-transition.component.vue";
 
 export default {
   name: "Loan",
