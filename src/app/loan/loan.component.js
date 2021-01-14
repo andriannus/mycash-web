@@ -1,13 +1,4 @@
-<template>
-  <router-view v-slot="{ Component }">
-    <my-fade-transition>
-      <component :is="Component"></component>
-    </my-fade-transition>
-  </router-view>
-</template>
-
-<script>
-import { computed, watchEffect } from "vue";
+import { computed, defineComponent, watchEffect } from "vue";
 import { useRoute } from "vue-router";
 
 import { LOAN_PAGES } from "./loan.constant";
@@ -15,7 +6,7 @@ import { LOAN_PAGES } from "./loan.constant";
 import { useSeo } from "@/shared/services/seo";
 import MyFadeTransition from "@/shared/components/fade-transition/fade-transition.component.vue";
 
-export default {
+export default defineComponent({
   name: "Loan",
 
   components: {
@@ -42,5 +33,4 @@ export default {
       initializePage();
     });
   },
-};
-</script>
+});
