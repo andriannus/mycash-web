@@ -1,14 +1,7 @@
-<template>
-  <div class="MyPage">
-    <slot></slot>
-  </div>
-</template>
+import { defineComponent, onMounted, onUnmounted } from "vue";
 
-<script>
-import { onMounted, onUnmounted } from "vue";
-
-export default {
-  name: "MyPage",
+export default defineComponent({
+  name: "Page",
 
   setup() {
     const body = document.getElementById("app");
@@ -29,13 +22,4 @@ export default {
       removeBgColorToApp();
     });
   },
-};
-</script>
-
-<style lang="scss" scoped>
-.MyPage {
-  background-color: #ffffff;
-  margin: auto;
-  max-width: 480px;
-}
-</style>
+});
