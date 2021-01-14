@@ -1,7 +1,7 @@
 import { defineComponent, onMounted, onUnmounted, ref } from "vue";
 import { useRouter } from "vue-router";
 
-import MySlideUpTransition from "@/shared/transitions/MySlideUpTransition.vue";
+import MySlideUpTransition from "@/shared/components/slide-up-transition/slide-up-transition.component.vue";
 import { scrollToElement } from "@/shared/utils/scroll";
 
 export default defineComponent({
