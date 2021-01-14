@@ -1,16 +1,3 @@
-<template>
-  <transition name="Bounce">
-    <slot></slot>
-  </transition>
-</template>
-
-<script>
-export default {
-  name: "MyBounceTransition",
-};
-</script>
-
-<style lang="scss" scoped>
 .Bounce {
   &-enter-active {
     animation: BounceIn 0.3s;
@@ -34,4 +21,3 @@ export default {
     transform: scale(1);
   }
 }
-</style>
