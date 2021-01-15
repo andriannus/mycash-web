@@ -1,0 +1,21 @@
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.LandingAdvantages {
+  &-icon {
+    height: 120px;
+  }
+}
+
+@include amb-responsive-media("xs") {
+  .Grid {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@include amb-responsive-media("md") {
+  .Grid {
+    margin-bottom: 0;
+  }
+}

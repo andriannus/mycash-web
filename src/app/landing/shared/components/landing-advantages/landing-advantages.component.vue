@@ -53,42 +53,5 @@
   </div>
 </template>
 
-<script>
-import LargeAndLightLoansIcon from "../../images/large-and-light-loans.svg";
-import PracticalSubmissionsIcon from "../../images/practical-submissions.svg";
-import SafeTransparentIcon from "../../images/safe-transparent.svg";
-
-export default {
-  name: "LandingAdvantages",
-
-  components: {
-    LargeAndLightLoansIcon,
-    PracticalSubmissionsIcon,
-    SafeTransparentIcon,
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-@import "@amar-ui-web/responsive/scss/mixins";
-
-.LandingAdvantages {
-  &-icon {
-    height: 120px;
-  }
-}
-
-@include amb-responsive-media("xs") {
-  .Grid {
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-@include amb-responsive-media("md") {
-  .Grid {
-    margin-bottom: 0;
-  }
-}
-</style>
+<script src="./landing-advantages.component.js"></script>
+<style lang="scss" scoped src="./landing-advantages.component.scss"></style>
