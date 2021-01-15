@@ -38,56 +38,5 @@
   </div>
 </template>
 
-<script>
-import IncomeIcon from "../../images/income.svg";
-import SmartphoneIcon from "../../images/smartphone.svg";
-
-export default {
-  name: "LandingAchieved",
-
-  components: {
-    IncomeIcon,
-    SmartphoneIcon,
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-@import "@amar-ui-web/responsive/scss/mixins";
-
-.LandingAchieved {
-  &-card {
-    align-items: center;
-    display: flex;
-  }
-
-  @include amb-responsive-media("xs") {
-    &-card {
-      justify-content: left;
-      padding: 0 1rem;
-    }
-
-    &:first-child {
-      padding-bottom: 1rem;
-    }
-
-    &:last-child {
-      padding-top: 1rem;
-    }
-  }
-
-  @include amb-responsive-media("md") {
-    &-card {
-      justify-content: center;
-    }
-
-    &:first-child {
-      padding-bottom: 0;
-    }
-
-    &:last-child {
-      padding-top: 0;
-    }
-  }
-}
-</style>
+<script src="./landing-achieved.component.js"></script>
+<style lang="scss" scoped src="./landing-achieved.component.scss"></style>

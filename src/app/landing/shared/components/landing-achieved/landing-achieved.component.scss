@@ -1,0 +1,37 @@
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.LandingAchieved {
+  &-card {
+    align-items: center;
+    display: flex;
+  }
+
+  @include amb-responsive-media("xs") {
+    &-card {
+      justify-content: left;
+      padding: 0 1rem;
+    }
+
+    &:first-child {
+      padding-bottom: 1rem;
+    }
+
+    &:last-child {
+      padding-top: 1rem;
+    }
+  }
+
+  @include amb-responsive-media("md") {
+    &-card {
+      justify-content: center;
+    }
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+
+    &:last-child {
+      padding-top: 0;
+    }
+  }
+}
