@@ -1,0 +1,33 @@
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.LandingDownload {
+  &-app {
+    a {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  @include amb-responsive-media("xs") {
+    text-align: center;
+
+    &-app {
+      justify-content: center;
+    }
+
+    &-illustration {
+      display: none;
+    }
+  }
+
+  @include amb-responsive-media("md") {
+    &-app {
+      justify-content: left;
+    }
+
+    &-illustration {
+      display: block;
+    }
+  }
+}

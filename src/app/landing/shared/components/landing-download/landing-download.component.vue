@@ -39,54 +39,5 @@
   </div>
 </template>
 
-<script>
-import AppStoreIcon from "../../images/app-store.svg";
-import DownloadIllustrationIcon from "../../images/download-illustration.svg";
-import GooglePlayIcon from "../../images/google-play.svg";
-
-export default {
-  name: "LandingDownload",
-
-  components: {
-    AppStoreIcon,
-    DownloadIllustrationIcon,
-    GooglePlayIcon,
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-@import "@amar-ui-web/responsive/scss/mixins";
-
-.LandingDownload {
-  &-app {
-    a {
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    }
-  }
-
-  @include amb-responsive-media("xs") {
-    text-align: center;
-
-    &-app {
-      justify-content: center;
-    }
-
-    &-illustration {
-      display: none;
-    }
-  }
-
-  @include amb-responsive-media("md") {
-    &-app {
-      justify-content: left;
-    }
-
-    &-illustration {
-      display: block;
-    }
-  }
-}
-</style>
+<script src="./landing-download.component.js"></script>
+<style lang="scss" scoped src="./landing-download.component.scss"></style>
