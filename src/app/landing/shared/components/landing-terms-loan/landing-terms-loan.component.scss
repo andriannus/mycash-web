@@ -1,0 +1,25 @@
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.LandingTermsLoan {
+  &-list {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @include amb-responsive-media("xs") {
+    text-align: center;
+
+    &-illustration {
+      display: none;
+    }
+  }
+
+  @include amb-responsive-media("md") {
+    &-illustration {
+      display: block;
+    }
+  }
+}

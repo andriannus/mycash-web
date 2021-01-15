@@ -34,49 +34,5 @@
   </div>
 </template>
 
-<script>
-import { APPLYING_LOAN_TERMS } from "./landing-terms-loan.constant";
-import TermsIllustrationIcon from "../../images/terms-illustration.svg";
-
-export default {
-  name: "LandingTermsLoan",
-
-  components: {
-    TermsIllustrationIcon,
-  },
-
-  setup() {
-    const terms = APPLYING_LOAN_TERMS;
-
-    return { terms };
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-@import "@amar-ui-web/responsive/scss/mixins";
-
-.LandingTermsLoan {
-  &-list {
-    li {
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-
-  @include amb-responsive-media("xs") {
-    text-align: center;
-
-    &-illustration {
-      display: none;
-    }
-  }
-
-  @include amb-responsive-media("md") {
-    &-illustration {
-      display: block;
-    }
-  }
-}
-</style>
+<script src="./landing-terms-loan.component.js"></script>
+<style lang="scss" scoped src="./landing-terms-loan.component.scss"></style>
