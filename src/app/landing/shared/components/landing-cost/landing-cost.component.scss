@@ -1,0 +1,57 @@
+@import "@amar-ui-web/color/scss/variables";
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.LandingCost {
+  @include amb-responsive-media("xs") {
+    &-card {
+      display: flex;
+
+      &:last-child {
+        align-items: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+
+        .LandingCost-content {
+          border-bottom: 1px solid $amb-neutral-60;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    &-content {
+      flex-grow: 1;
+      margin-left: 1rem;
+    }
+
+    &-icon {
+      margin-bottom: 0;
+    }
+  }
+
+  @include amb-responsive-media("lg") {
+    &-card {
+      display: block;
+      margin: 0;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+
+        .LandingCost-content {
+          border-bottom: none;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    &-content {
+      margin-left: 0;
+    }
+
+    &-icon {
+      margin-bottom: 1rem;
+    }
+  }
+}
