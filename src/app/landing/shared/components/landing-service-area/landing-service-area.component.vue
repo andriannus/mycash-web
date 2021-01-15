@@ -37,42 +37,5 @@
   </div>
 </template>
 
-<script>
-import { SERVICE_AREAS } from "./landing-service-area.constant";
-
-export default {
-  name: "LandingServiceArea",
-
-  setup() {
-    const serviceAreas = SERVICE_AREAS;
-
-    const transformCityText = area => {
-      const selectedArea = SERVICE_AREAS.find(({ island }) => island === area);
-      const selectedCities = selectedArea.cities.map(city => {
-        return city.charAt(0).toUpperCase() + city.slice(1);
-      });
-      const lastCityIndex = selectedCities.length - 1;
-      const lastCity = selectedCities[lastCityIndex];
-
-      if (selectedCities.length < 3) {
-        return selectedCities.join(" dan ");
-      }
-
-      selectedCities[lastCityIndex] = `dan ${lastCity}`;
-      return selectedCities.join(", ");
-    };
-
-    return { serviceAreas, transformCityText };
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-.LandingServiceArea {
-  &-list {
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-  }
-}
-</style>
+<script src="./landing-service-area.component.js"></script>
+<style lang="scss" scoped src="./landing-service-area.component.scss"></style>
