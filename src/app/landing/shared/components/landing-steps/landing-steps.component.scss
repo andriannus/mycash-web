@@ -1,0 +1,41 @@
+@import "@amar-ui-web/color/scss/variables";
+@import "@amar-ui-web/responsive/scss/mixins";
+
+.LandingSteps {
+  &-list {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-number {
+    border: 1px solid $amb-info;
+    border-radius: 50%;
+    height: 1.75rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 1.75rem;
+  }
+
+  @include amb-responsive-media("xs") {
+    &-illustration {
+      display: none;
+    }
+
+    &-list {
+      margin-right: 0;
+    }
+  }
+
+  @include amb-responsive-media("lg") {
+    &-illustration {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-list {
+      margin-right: 1rem;
+    }
+  }
+}
