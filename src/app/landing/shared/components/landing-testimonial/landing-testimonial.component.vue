@@ -40,35 +40,5 @@
   </div>
 </template>
 
-<script>
-import { TESTIMONIALS } from "./landing-testimonial.const";
-
-export default {
-  name: "LandingTestimonial",
-
-  setup() {
-    const testimonials = TESTIMONIALS;
-
-    return { testimonials };
-  },
-};
-</script>
-
-<style lang="scss" scoped>
-.LandingTestimonial {
-  &-list {
-    display: flex;
-    justify-content: space-between;
-    overflow-y: auto;
-
-    .Card {
-      min-width: 280px;
-      width: 100%;
-
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-</style>
+<script src="./landing-testimonial.component.js"></script>
+<style lang="scss" scoped src="./landing-testimonial.component.scss"></style>

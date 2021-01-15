@@ -1,0 +1,16 @@
+.LandingTestimonial {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+
+    .Card {
+      min-width: 280px;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
