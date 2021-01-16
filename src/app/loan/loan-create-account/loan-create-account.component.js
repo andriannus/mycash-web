@@ -8,6 +8,7 @@ import MyBackButton from "@/app/shared/components/back-button/back-button.compon
 import MyButton from "@/app/shared/components/button/button.component.vue";
 import MyContent from "@/app/shared/components/content/content.component.vue";
 import MyDialog from "@/app/shared/components/dialog/dialog.component.vue";
+import MyFeedback from "@/app/shared/components/feedback/feedback.component.vue";
 import MyHeader from "@/app/shared/components/header/header.component.vue";
 import MyPage from "@/app/shared/components/page/page.component.vue";
 import MyTextField from "@/app/shared/components/text-field/text-field.component.vue";
@@ -22,6 +23,7 @@ export default defineComponent({
     MyButton,
     MyContent,
     MyDialog,
+    MyFeedback,
     MyHeader,
     MyPage,
     MyTextField,
