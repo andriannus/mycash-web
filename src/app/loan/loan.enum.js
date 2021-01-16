@@ -5,6 +5,7 @@ export const LoanFeature = {
   KtpData: "loanKtpData",
   OutsideArea: "loanOutsideArea",
   Purpose: "loanPurpose",
+  RejectedAge: "loanRejectedAge",
   VentureCapital: "loanVentureCapital",
 };
 

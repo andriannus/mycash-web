@@ -85,6 +85,7 @@ export const LOAN_PAGE_PATH = {
   [LoanFeature.KtpData]: "/loan/ktp-data",
   [LoanFeature.OutsideArea]: "/loan/outside-area",
   [LoanFeature.Purpose]: "/loan/purpose",
+  [LoanFeature.RejectedAge]: "/loan/rejected-age",
   [LoanFeature.VentureCapital]: "/loan/venture-capital",
 };
 
@@ -100,6 +101,10 @@ export const LOAN_PAGES = [
   {
     documentTitle: "Diluar Area Layanan",
     path: LOAN_PAGE_PATH[LoanFeature.OutsideArea],
+  },
+  {
+    documentTitle: "Diluar Batas Usia",
+    path: LOAN_PAGE_PATH[LoanFeature.RejectedAge],
   },
   {
     documentTitle: "Tujuan Pinjaman",

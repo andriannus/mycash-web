@@ -65,6 +65,14 @@ const loanRoutes = [
             /* webpackChunkName: "loan-create-account" */ "./loan-create-account/loan-create-account.component.vue"
           ),
       },
+      {
+        path: "rejected-age",
+        name: "LoanRejectedAge",
+        component: () =>
+          import(
+            /* webpackChunkName: "loan-rejected-age" */ "./loan-rejected-age/loan-rejected-age.component.vue"
+          ),
+      },
     ],
   },
 ];
