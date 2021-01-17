@@ -11,6 +11,7 @@ import MyContent from "@/app/shared/components/content/content.component.vue";
 import MyFeedback from "@/app/shared/components/feedback/feedback.component.vue";
 import MyHeader from "@/app/shared/components/header/header.component.vue";
 import MyPage from "@/app/shared/components/page/page.component.vue";
+import MyTextarea from "@/app/shared/components/textarea/textarea.component.vue";
 import MyTextField from "@/app/shared/components/text-field/text-field.component.vue";
 import MyTitle from "@/app/shared/components/title/title.component.vue";
 import MyToolbar from "@/app/shared/components/toolbar/toolbar.component.vue";
@@ -26,6 +27,7 @@ export default defineComponent({
     MyFeedback,
     MyHeader,
     MyPage,
+    MyTextarea,
     MyTextField,
     MyTitle,
     MyToolbar,

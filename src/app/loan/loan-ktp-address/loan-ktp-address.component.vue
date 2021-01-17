@@ -17,6 +17,12 @@
         Lengkapi semua data di bawah ini sesuai dengan KTP Anda.
       </p>
 
+      <my-textarea
+        id="TxtAddress"
+        label="Alamat"
+        placeholder="Masukkan alamat kamu"
+      ></my-textarea>
+
       <div class="Grids">
         <div class="Grid">
           <my-text-field id="TxtBlockNumber" label="Nomor Blok"></my-text-field>
