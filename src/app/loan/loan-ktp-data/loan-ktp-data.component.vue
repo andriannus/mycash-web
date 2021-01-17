@@ -31,6 +31,19 @@
         placeholder="Masukkan nama kamu"
       ></my-text-field>
 
+      <my-date-field
+        id="DtpBirthdayDate"
+        label="Tanggal Lahir"
+        placeholder="Masukkan tanggal lahir kamu"
+      ></my-date-field>
+
+      <p class="FontSize-small Color-dark MarginBottom">
+        <em>
+          Minimal umur 21 tahun. Kami akan cek kesesuaian dengan KTP Anda saat
+          tanda tangan kontrak.
+        </em>
+      </p>
+
       <div class="Field">
         <label class="Field-label">Jenis Kelamin</label>
 
