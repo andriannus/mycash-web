@@ -4,6 +4,7 @@
       <my-toolbar>
         <my-back-button v-if="setup.isBackButtonShown"></my-back-button>
         <my-title>Data KTP</my-title>
+        <my-feedback></my-feedback>
       </my-toolbar>
     </my-header>
 

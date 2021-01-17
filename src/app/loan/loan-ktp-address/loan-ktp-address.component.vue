@@ -4,6 +4,7 @@
       <my-toolbar>
         <my-back-button></my-back-button>
         <my-title>Alamat KTP</my-title>
+        <my-feedback></my-feedback>
       </my-toolbar>
     </my-header>
 
