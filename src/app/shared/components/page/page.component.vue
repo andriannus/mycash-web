@@ -1,5 +1,5 @@
 <template>
-  <div class="MyPage">
+  <div :class="pageClassNames">
     <slot></slot>
   </div>
 </template>

@@ -3,8 +3,21 @@ import { defineComponent, onMounted, onUnmounted } from "vue";
 export default defineComponent({
   name: "Page",
 
-  setup() {
+  props: {
+    className: {
+      type: String,
+      default: "",
+    },
+    popUpWindow: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  setup(props) {
     const body = document.getElementById("app");
+
+    const pageClassNames = [props.className && props.className, "MyPage"];
 
     const addBgColorToApp = () => {
       body.classList.add("BgColor-light");
@@ -15,11 +28,17 @@ export default defineComponent({
     };
 
     onMounted(() => {
-      addBgColorToApp();
+      if (!props.popUpWindow) {
+        addBgColorToApp();
+      }
     });
 
     onUnmounted(() => {
-      removeBgColorToApp();
+      if (!props.popUpWindow) {
+        removeBgColorToApp();
+      }
     });
+
+    return { pageClassNames };
   },
 });
