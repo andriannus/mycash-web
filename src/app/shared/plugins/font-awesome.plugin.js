@@ -15,6 +15,7 @@ import {
   faComment,
   faEnvelope,
   faMapMarkerAlt,
+  faTimes,
   faUserCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -29,6 +30,7 @@ const icons = [
   faInstagram,
   faLinkedin,
   faMapMarkerAlt,
+  faTimes,
   faTwitter,
   faUserCircle,
   faYoutube,
