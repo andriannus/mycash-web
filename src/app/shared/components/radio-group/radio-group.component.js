@@ -11,7 +11,7 @@ export default defineComponent({
     },
     options: {
       type: Array,
-      default() {
+      default: () => {
         return [];
       },
     },

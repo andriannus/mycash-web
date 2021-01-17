@@ -10,7 +10,7 @@ export default defineComponent({
     },
     errors: {
       type: Array,
-      default() {
+      default: () => {
         return [];
       },
     },
