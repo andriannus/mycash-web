@@ -37,7 +37,7 @@
         <div class="Field-control Flex">
           <my-radio
             id="RbMale"
-            className="MarginRight"
+            class-name="MarginRight"
             name="Gender"
             value="male"
           >

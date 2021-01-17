@@ -19,7 +19,7 @@
       <my-radio
         v-model="serviceArea"
         id="RbInsideServiceArea"
-        className="MarginBottom"
+        class-name="MarginBottom"
         name="RbServiceArea"
         value="inside"
       >

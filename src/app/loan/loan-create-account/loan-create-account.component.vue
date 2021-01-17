@@ -69,7 +69,7 @@
 
       <div class="Flex JustifyContent-end MarginTop-large">
         <my-button
-          className="MarginRight-2xsmall"
+          class-name="MarginRight-2xsmall"
           color="primary"
           :text="true"
           @click="toggleDialogShow"

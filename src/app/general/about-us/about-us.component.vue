@@ -3,7 +3,7 @@
 
   <my-page>
     <my-content
-      className="TextAlign-justify"
+      class-name="TextAlign-justify"
       :has-toolbar="false"
       padding="none"
     >
