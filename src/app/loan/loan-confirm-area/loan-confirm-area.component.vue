@@ -8,18 +8,18 @@
     </my-header>
 
     <my-content>
-      <div class="TextAlign-center MarginTop-base MarginBottom-base">
+      <div class="TextAlign-center MarginTop MarginBottom">
         <service-area-icon></service-area-icon>
       </div>
 
-      <p class="MarginBottom-base">
+      <p class="MarginBottom">
         <strong>Pilih area tempat tinggal Anda di bawah ini!</strong>
       </p>
 
       <my-radio
         v-model="serviceArea"
         id="RbInsideServiceArea"
-        className="MarginBottom-base"
+        className="MarginBottom"
         name="RbServiceArea"
         value="inside"
       >

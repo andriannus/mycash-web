@@ -7,11 +7,11 @@
 
       <div class="Grid Flex AlignItems-center JustifyContent-center">
         <div>
-          <p class="FontSize-xlarge MarginBottom-base">
+          <p class="FontSize-xlarge MarginBottom">
             Dapatkan Pengalaman Meminjam Mudah dan Praktis
           </p>
 
-          <p class="FontSize-base MarginBottom-base">
+          <p class="FontSize MarginBottom">
             Pantau status pengajuan kreditmu dengan mudah, kapan pun, dan dimana
             pun.
           </p>

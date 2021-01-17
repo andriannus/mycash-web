@@ -19,12 +19,12 @@
         </my-header>
 
         <my-content>
-          <p class="MarginBottom-base">
+          <p class="MarginBottom">
             Bantu kami melayani Anda lebih baik.
           </p>
 
           <div>
-            <p class="MarginBottom-base">
+            <p class="MarginBottom">
               <strong>Seberapa mudah pengisian formulir di Tunaiku.</strong>
             </p>
           </div>
@@ -36,13 +36,13 @@
               </strong>
             </p>
 
-            <p class="MarginBottom-base">
+            <p class="MarginBottom">
               Pilih salah satu saja.
             </p>
           </div>
 
           <div>
-            <p class="MarginBottom-base">
+            <p class="MarginBottom">
               <strong>
                 Ceritakan alasan Anda memberikan penilaian tersebut.
               </strong>

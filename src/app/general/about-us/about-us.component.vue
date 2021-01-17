@@ -18,11 +18,11 @@
       </div>
 
       <div class="Container PaddingTop-large PaddingBottom-large">
-        <h2 class="FontSize-large MarginBottom-base">
+        <h2 class="FontSize-large MarginBottom">
           Apa itu Tunaiku
         </h2>
 
-        <p class="MarginBottom-base">
+        <p class="MarginBottom">
           Tunaiku merupakan teknologi finansial atau
           <em>fintech</em>
           pertama di Indonesia yang bergerak menyediakan pinjaman uang online
@@ -31,7 +31,7 @@
           persyaratan yang mudah.
         </p>
 
-        <p class="MarginBottom-base">
+        <p class="MarginBottom">
           Mulai beroperasi pada 2014, Tunaiku merupakan produk digital
           <a class="Color-dark-90" href="http://tunaiku.com">
             pinjaman tanpa agunan
@@ -63,7 +63,7 @@
           />
         </picture>
 
-        <p class="MarginTop-base">
+        <p class="MarginTop">
           TOLARAM merupakan perusahaan multinasional yang telah berdiri lebih
           dari 60 tahun. TOLARAM bergerak diberbagai bidang bisnis antara lain
           barang kebutuhan sehari-hari, pelayanan digital, energi, dan
@@ -83,7 +83,7 @@
               <strong>Mudah dan Cepat</strong>
             </p>
 
-            <div class="TextAlign-center MarginTop-base MarginBottom-base">
+            <div class="TextAlign-center MarginTop MarginBottom">
               <easy-and-fast-icon></easy-and-fast-icon>
             </div>
 
@@ -129,8 +129,8 @@
             />
           </picture>
 
-          <div class="MarginLeft-base">
-            <p class="MarginBottom-base">
+          <div class="MarginLeft">
+            <p class="MarginBottom">
               PT Bank Amar Indonesia Tbk. ("AMAR") atau Amar Bank adalah bank
               digital pertama dan satu-satunya di Indonesia, baru-baru ini
               diakui sebagai salah satu tempat terbaik untuk bekerja di
@@ -141,7 +141,7 @@
               .
             </p>
 
-            <p class="MarginBottom-base">
+            <p class="MarginBottom">
               <em>Best Places to Work Certification</em>
               atau Tempat Terbaik untuk Bekerja adalah program sertifikasi
               Internasional yang memberikan kesempatan kepada pemberi kerja di
@@ -165,7 +165,7 @@
       <div
         class="AboutUs-ourOffice Container PaddingTop-large PaddingBottom-large"
       >
-        <h2 class="FontSize-large TextAlign-center MarginBottom-base">
+        <h2 class="FontSize-large TextAlign-center MarginBottom">
           Kantor Kami
         </h2>
 
@@ -217,12 +217,12 @@
       <div
         class="AboutUs-career Color-light-10 TextAlign-center PaddingTop-large PaddingBottom-large"
       >
-        <p class="FontSize-large MarginBottom-base">
+        <p class="FontSize-large MarginBottom">
           <strong>Karir di Tunaiku</strong>
         </p>
 
         <p>Ingin karir yang seru dan high-impact?</p>
-        <p class="MarginBottom-base">Bergabunglah dengan kami!</p>
+        <p class="MarginBottom">Bergabunglah dengan kami!</p>
 
         <a
           class="Button Button--primary Button--rounded Transform-uppercase"

@@ -6,7 +6,7 @@
           <div class="LandingAchieved-card">
             <income-icon></income-icon>
 
-            <div class="MarginLeft-base">
+            <div class="MarginLeft">
               <p class="FontSize-large">
                 > 4 Triliun Rupiah
               </p>
@@ -22,7 +22,7 @@
           <div class="LandingAchieved-card">
             <smartphone-icon></smartphone-icon>
 
-            <div class="MarginLeft-base">
+            <div class="MarginLeft">
               <p class="FontSize-large">
                 > 4,6 Juta Pengguna
               </p>

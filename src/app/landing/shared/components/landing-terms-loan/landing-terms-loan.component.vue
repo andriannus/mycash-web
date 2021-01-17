@@ -20,7 +20,7 @@
               class="Flex AlignItems-center"
             >
               <my-icon
-                class="MarginRight-base"
+                class="MarginRight"
                 :icon="['far', 'check-circle']"
                 size="lg"
               ></my-icon>

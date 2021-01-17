@@ -4,10 +4,10 @@
       'Card--borderless': props.borderless,
       'Card--elevated': props.elevated,
     }"
-    class="LoanSlider Card MarginBottom-base"
+    class="LoanSlider Card MarginBottom"
   >
     <div class="Card-body">
-      <div class="MarginBottom-base">
+      <div class="MarginBottom">
         <div class="Flex JustifyContent-between">
           <strong>Jumlah Pinjaman</strong>
           <strong class="Color-primary">{{ state.loanAmount }} juta</strong>
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="MarginBottom-base">
+      <div class="MarginBottom">
         <div class="Flex JustifyContent-between">
           <strong>Lama Pinjaman</strong>
           <strong class="Color-primary">{{ state.loanPeriod }} bulan</strong>

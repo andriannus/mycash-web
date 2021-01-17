@@ -1,7 +1,7 @@
 <template>
   <my-top-bar></my-top-bar>
 
-  <div class="Container MarginTop-base">
+  <div class="Container MarginTop">
     <div class="Grids">
       <div class="Grid Grid-12 Grid-sm-12 Grid-md-7 Grid-lg-8 Landing-hero">
         <h1>Ajukan Pinjaman Online Tanpa Jaminan</h1>

@@ -1,7 +1,7 @@
 <template>
   <my-page>
     <my-content :has-toolbar="false">
-      <div class="TextAlign-center MarginTop-base MarginBottom-base">
+      <div class="TextAlign-center MarginTop MarginBottom">
         <rejected-age-icon></rejected-age-icon>
       </div>
 

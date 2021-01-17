@@ -1,22 +1,22 @@
 <template>
   <my-page>
     <my-content :has-toolbar="false">
-      <div class="TextAlign-center MarginTop-base MarginBottom-base">
+      <div class="TextAlign-center MarginTop MarginBottom">
         <service-area-icon></service-area-icon>
       </div>
 
-      <p class="MarginBottom-base">
+      <p class="MarginBottom">
         <strong>
           Mohon maaf, daerah Anda belum termasuk dalam area layanan kami.
         </strong>
       </p>
 
-      <p class="MarginBottom-base">
+      <p class="MarginBottom">
         Ayo dukung terus Tunaiku untuk mengembangkan layanan sampai ke daerah
         Anda dengan cara:
       </p>
 
-      <ol class="MarginLeft-base">
+      <ol class="MarginLeft">
         <li class="MarginBottom-xsmall">Beri bintang 5 di Play Store.</li>
 
         <li>
@@ -31,7 +31,7 @@
       <template #contentFooter>
         <my-button
           color="primary"
-          class="MarginBottom-base"
+          class="MarginBottom"
           full-width
           outlined
           to="/"

@@ -7,10 +7,10 @@
     <div class="Grids">
       <div class="Grid Grid-12 Grid-sm-12 Grid-md-4">
         <practical-submissions-icon
-          class="LandingAdvantages-icon MarginBottom-base"
+          class="LandingAdvantages-icon MarginBottom"
         ></practical-submissions-icon>
 
-        <p class="MarginBottom-base">
+        <p class="MarginBottom">
           <strong>Pengajuan yang Praktis</strong>
         </p>
 
@@ -22,10 +22,10 @@
 
       <div class="Grid Grid-12 Grid-sm-12 Grid-md-4">
         <large-and-light-loans-icon
-          class="LandingAdvantages-icon MarginBottom-base"
+          class="LandingAdvantages-icon MarginBottom"
         ></large-and-light-loans-icon>
 
-        <p class="MarginBottom-base">
+        <p class="MarginBottom">
           <strong>Pinjaman Besar dan Ringan</strong>
         </p>
 
@@ -37,10 +37,10 @@
 
       <div class="Grid Grid-12 Grid-sm-12 Grid-md-4">
         <safe-transparent-icon
-          class="LandingAdvantages-icon MarginBottom-base"
+          class="LandingAdvantages-icon MarginBottom"
         ></safe-transparent-icon>
 
-        <p class="MarginBottom-base">
+        <p class="MarginBottom">
           <strong>Aman Transparan</strong>
         </p>
 

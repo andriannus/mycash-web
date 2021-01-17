@@ -2,7 +2,7 @@
   <div
     v-for="(option, index) in options"
     :key="index"
-    class="Radio MarginBottom-base"
+    class="Radio MarginBottom"
   >
     <input
       :id="id + index"

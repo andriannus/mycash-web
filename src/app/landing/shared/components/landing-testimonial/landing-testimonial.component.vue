@@ -1,7 +1,7 @@
 <template>
   <div class="Container PaddingTop-xlarge PaddingBottom-xlarge">
     <div class="TextAlign-center MarginBottom-large">
-      <p class="FontSize-large MarginBottom-base">
+      <p class="FontSize-large MarginBottom">
         Testimoni Nasabah
       </p>
 
@@ -18,7 +18,7 @@
           <div class="Flex AlignItems-center">
             <my-icon icon="user-circle" size="3x"></my-icon>
 
-            <div class="Flex Flex-column MarginLeft-base">
+            <div class="Flex Flex-column MarginLeft">
               <p class="FontSize-small">
                 {{ testimonial.name }}, {{ testimonial.age }} tahun
               </p>
@@ -29,7 +29,7 @@
             </div>
           </div>
 
-          <hr class="MarginTop-base MarginBottom-base" />
+          <hr class="MarginTop MarginBottom" />
 
           <div class="TextAlign-center">
             <p>{{ testimonial.description }}</p>

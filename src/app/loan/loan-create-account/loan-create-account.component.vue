@@ -11,7 +11,7 @@
     <my-content>
       <div class="Card Card--elevated Card--borderless">
         <div class="Card-body">
-          <div class="MarginBottom-base">
+          <div class="MarginBottom">
             <p>
               <small>Total Pinjaman</small>
             </p>
@@ -36,7 +36,7 @@
         </div>
       </div>
 
-      <div class="MarginTop-base">
+      <div class="MarginTop">
         <my-text-field
           id="TxtFullName"
           label="Nama Sesuai KTP"

@@ -1,8 +1,8 @@
 <template>
   <div
-    class="BgColor-light-20 PaddingTop-large PaddingRight-base PaddingBottom-large PaddingLeft-base"
+    class="BgColor-light-20 PaddingTop-large PaddingRight PaddingBottom-large PaddingLeft"
   >
-    <div class="MarginBottom-base">
+    <div class="MarginBottom">
       <p class="MarginBottom-xsmall">
         <strong>Media Sosial Kami</strong>
       </p>
@@ -11,7 +11,7 @@
         <a
           v-for="socialMedia in socialMedias"
           :key="socialMedia.icon"
-          class="Color-dark-90 MarginRight-base"
+          class="Color-dark-90 MarginRight"
           :href="socialMedia.href"
           rel="noopener noreferrer"
           target="_blank"
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="MarginBottom-base">
+    <div class="MarginBottom">
       <p class="MarginBottom-xsmall">
         <strong>Layanan Pelanggan</strong>
       </p>
@@ -29,7 +29,7 @@
       <div class="Flex AlignItems-center MarginBottom-small">
         <my-icon icon="comment"></my-icon>
 
-        <div class="MarginLeft-base">
+        <div class="MarginLeft">
           <p>Live Chat</p>
 
           <span>(Senin - Jum'at, 08.00 - 17.00 WIB)</span>
@@ -39,13 +39,13 @@
       <div class="Flex AlignItems-center">
         <my-icon icon="envelope"></my-icon>
 
-        <div class="MarginLeft-base">
+        <div class="MarginLeft">
           <span>tanya@amarbank.co.id</span>
         </div>
       </div>
     </div>
 
-    <div class="MarginBottom-base">
+    <div class="MarginBottom">
       <p class="MarginBottom-xsmall">
         <strong>Kantor Fungsional Tunaiku</strong>
       </p>
@@ -56,7 +56,7 @@
       </span>
     </div>
 
-    <div class="MarginTop-base MarginBottom-base">
+    <div class="MarginTop MarginBottom">
       <hr />
     </div>
 
@@ -67,15 +67,15 @@
         yang terdaftar dan diawasi oleh:
       </p>
 
-      <div class="Grids MarginTop-base MarginBottom-base">
+      <div class="Grids MarginTop MarginBottom">
         <div class="Grid TextAlign-right">
-          <a class="MarginRight-base" href="https://amarbank.co.id">
+          <a class="MarginRight" href="https://amarbank.co.id">
             <amar-bank-icon></amar-bank-icon>
           </a>
         </div>
 
         <div class="Grid">
-          <a class="MarginLeft-base" href="https://www.ojk.go.id">
+          <a class="MarginLeft" href="https://www.ojk.go.id">
             <ojk-icon></ojk-icon>
           </a>
         </div>
@@ -112,12 +112,12 @@
       </div>
     </div>
 
-    <div class="MarginTop-base MarginBottom-base">
+    <div class="MarginTop MarginBottom">
       <hr />
     </div>
 
     <div>
-      <p class="MarginBottom-base">
+      <p class="MarginBottom">
         PT Bank Amar Indonesia Tbk. terdaftar dan diawasi oleh Otoritas Jasa
         Keuangan. &copy; 2020 PT Bank Amar Indonesia Tbk. Semua hak cipta
         dilindungi.

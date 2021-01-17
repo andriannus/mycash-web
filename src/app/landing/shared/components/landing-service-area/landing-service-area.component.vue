@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <hr class="MarginTop-base MarginBottom-base" />
+    <hr class="MarginTop MarginBottom" />
 
     <div class="TextAlign-center">
       <span class="FontSize-small Color-light-80">
