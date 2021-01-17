@@ -24,7 +24,7 @@
           </p>
 
           <div>
-            <p>
+            <p class="MarginBottom-base">
               <strong>Seberapa mudah pengisian formulir di Tunaiku.</strong>
             </p>
           </div>
@@ -42,11 +42,16 @@
           </div>
 
           <div>
-            <p>
+            <p class="MarginBottom-base">
               <strong>
                 Ceritakan alasan Anda memberikan penilaian tersebut.
               </strong>
             </p>
+
+            <my-textarea
+              id="TxtFeedback"
+              placeholder="Tulis ulasan Anda disini"
+            ></my-textarea>
           </div>
 
           <template #contentFooter>

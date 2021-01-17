@@ -6,6 +6,7 @@ import MyCloseButton from "@/app/shared/components/close-button/close-button.com
 import MyContent from "@/app/shared/components/content/content.component.vue";
 import MyHeader from "@/app/shared/components/header/header.component.vue";
 import MyPage from "@/app/shared/components/page/page.component.vue";
+import MyTextarea from "@/app/shared/components/textarea/textarea.component.vue";
 import MyTitle from "@/app/shared/components/title/title.component.vue";
 import MyToolbar from "@/app/shared/components/toolbar/toolbar.component.vue";
 
@@ -19,6 +20,7 @@ export default defineComponent({
     MyContent,
     MyHeader,
     MyPage,
+    MyTextarea,
     MyToolbar,
     MyTitle,
   },
