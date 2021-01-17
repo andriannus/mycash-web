@@ -48,6 +48,13 @@
           label="Nomor KTP (NIK)"
           placeholder="Masukkan nomor KTP kamu"
         ></my-text-field>
+
+        <my-select
+          id="DrpMediaSource"
+          :items="items"
+          label="Dari Mana Kamu Mengetahui Tunaiku?"
+          placeholder="Pilih salah satu"
+        ></my-select>
       </div>
 
       <template #contentFooter>
