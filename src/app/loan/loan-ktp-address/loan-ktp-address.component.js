@@ -1,6 +1,7 @@
 import { computed, defineComponent } from "vue";
 import { useRoute, useRouter } from "vue-router";
 
+import { CITIZENSHIP } from "./loan-ktp-address.constant";
 import { LOAN_PAGE_PATH, LOAN_PAGES } from "../loan.constant";
 import { LoanFeature } from "../loan.enum";
 import LoanProgress from "../shared/components/loan-progress/loan-progress.component.vue";
@@ -11,6 +12,7 @@ import MyContent from "@/app/shared/components/content/content.component.vue";
 import MyFeedback from "@/app/shared/components/feedback/feedback.component.vue";
 import MyHeader from "@/app/shared/components/header/header.component.vue";
 import MyPage from "@/app/shared/components/page/page.component.vue";
+import MySelect from "@/app/shared/components/select/select.component.vue";
 import MyTextarea from "@/app/shared/components/textarea/textarea.component.vue";
 import MyTextField from "@/app/shared/components/text-field/text-field.component.vue";
 import MyTitle from "@/app/shared/components/title/title.component.vue";
@@ -27,6 +29,7 @@ export default defineComponent({
     MyFeedback,
     MyHeader,
     MyPage,
+    MySelect,
     MyTextarea,
     MyTextField,
     MyTitle,
@@ -36,6 +39,8 @@ export default defineComponent({
   setup() {
     const route = useRoute();
     const router = useRouter();
+
+    const items = CITIZENSHIP;
 
     const pagePercentage = computed(() => {
       const selectedPage = LOAN_PAGES.find(({ path }) => path === route.path);
@@ -47,6 +52,7 @@ export default defineComponent({
     };
 
     return {
+      items,
       onClickNextButton,
       pagePercentage,
     };

@@ -46,6 +46,13 @@
         </div>
       </div>
 
+      <my-select
+        id="DrpCitizenship"
+        :items="items"
+        label="Kewarganegaraan"
+        placeholder="Pilih salah satu"
+      ></my-select>
+
       <template #contentFooter>
         <my-button color="primary" full-width>Lanjutkan</my-button>
       </template>
